@@ -1,0 +1,17 @@
+@use 'variables' as *;
+@use 'placeholder' as *;
+@use './mixins/mixins' as *;
+@use './components/homepage.scss' as *;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+
+
+

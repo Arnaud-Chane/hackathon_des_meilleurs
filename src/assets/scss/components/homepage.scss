@@ -1,0 +1,5 @@
+@use '../mixins/mixins' as *;
+
+.Homepage{
+  @include color(blue);
+}
