@@ -1,5 +1,5 @@
 {
-  "name": "loup-garou",
+  "name": "hackathon",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,6 +12,7 @@
     "@reduxjs/toolkit": "^1.9.5",
     "axios": "^1.3.5",
     "dotenv": "^16.0.3",
+    "eslint-config-prettier": "^8.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.43.9",
@@ -23,6 +24,9 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
+    "eslint": "^8.40.0",
+    "eslint-plugin-react": "^7.32.2",
+    "prettier": "^2.8.8",
     "vite": "^4.2.0"
   }
 }
