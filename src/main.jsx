@@ -3,12 +3,17 @@ import ReactDOM from "react-dom/client";
 import "./assets/scss/main.scss";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Homepage from './pages/Homepage';
+import Homepage from "./pages/Homepage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Homepage />,
+  },
+  {
+    path: "*",
+    element: <NotFoundPage />,
   },
 ]);
 
