@@ -2,6 +2,8 @@
 @use 'placeholder' as *;
 @use './mixins/mixins' as *;
 @use './components/homepage.scss' as *;
+@use './components/notFoundPage.scss' as *;
+@use './components/CGUPage.scss' as *;
 
 * {
   box-sizing: border-box;
