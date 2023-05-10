@@ -86,7 +86,7 @@ function CGUPage() {
       <div className="text-content">
         Si vous avez des questions ou des préoccupations concernant notre
         application ou les présentes CGU, n'hésitez pas à nous contacter à
-        l'adresse e-mail suivante : contact@nom-de-notre-entreprise.com.
+        l'adresse e-mail suivante : contact-juste-les-meilleurs@nous.com.
       </div>
     </div>
   );
