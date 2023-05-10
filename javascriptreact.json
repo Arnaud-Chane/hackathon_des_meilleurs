@@ -1,0 +1,169 @@
+{
+	"function components React": {
+		"prefix": "fred",
+		"body": [
+		  "import React from 'react';",
+		  "",
+		  "function ${TM_FILENAME_BASE}() {",
+		  "  return (",
+		  "    <>",
+		  "    ",
+		  "    </>",
+		  "  )",
+		  "}",
+		  "export default ${TM_FILENAME_BASE};"
+		],
+		"description": "function components React"
+	  },
+	  "arrow function": {
+		"prefix": "arrowFunctionReact",
+		"body": [
+		  "import React from 'react';",
+		  "",
+		  "const ${TM_FILENAME_BASE} = () => {",
+		  "  return (",
+		  "    <>",
+		  "    ",
+		  "    </>",
+		  "  )",
+		  "}",
+		  "export default ${TM_FILENAME_BASE};"
+		],
+		"description": "arrow function"
+	  },
+	  "Axios dans une fonction": {
+		"prefix": "axiosAllInFunction",
+		"body": [
+		  "import React, { useEffect, useState } from 'react';",
+		  "import axios from 'axios'; /* npm i axios */",
+		  "",
+		  "  const [data, setData] = useState([]);",
+		  "  const getData = () => {",
+		  "    axios",
+		  "      .get('https://Adresse')",
+		  "      .then((response) => {",
+		  "        setData(response.data);",
+		  "      })",
+		  "      .catch(error => {",
+		  "        console.error(error);",
+		  "      });",
+		  "  };",
+		  "",
+		  "useEffect(() => { /* Vérifier import { useEffect } from 'react' */",
+		  "getData();",
+		  "  }, []);"
+		],
+		"description": "Axios dans une fonction"
+	  },
+	  "Axios sans fonction": {
+		"prefix": "axiosAllNotFunction",
+		"body": [
+		  "import React, { useEffect, useState } from \"react\";",
+		  "import axios from \"axios\"; /* npm i axios */",
+		  "",
+		  "  const [data, setData] = useState([]);",
+		  "useEffect(() => {",
+		  "  axios",
+		  "    .get(\"https://example.com/api/data\")",
+		  "    .then((response) => {",
+		  "      setData(response.data);",
+		  "    })",
+		  "    .catch((error) => {",
+		  "      console.error(error);",
+		  "    });",
+		  "}, []);"
+		],
+		"description": "Axios sans fonction"
+	  },
+	  "console.info": {
+		"prefix": "cli",
+		"body": [
+		  "console.info(${CLIPBOARD});"
+		],
+		"description": "console.info"
+	  },
+	  "formulaire React": {
+		"prefix": "formReact",
+		"body": [
+		  "import React, { useState } from 'react';",
+		  "",
+		  "function MyForm() {",
+		  "  const [name, setName] = useState('');",
+		  "  const [email, setEmail] = useState('');",
+		  "",
+		  "  const handleSubmit = (event) => {",
+		  "    event.preventDefault();",
+		  "    console.log(`Name: ${name}, Email: ${email}`);",
+		  "  }",
+		  "",
+		  "  const handleNameChange = (event) => {",
+		  "    setName(event.target.value);",
+		  "  }",
+		  "",
+		  "  const handleEmailChange = (event) => {",
+		  "    setEmail(event.target.value);",
+		  "  }",
+		  "",
+		  "  return (",
+		  "    <form onSubmit={handleSubmit}>",
+		  "      <div>",
+		  "        <label htmlFor=\"name\">Name:</label>",
+		  "        <input type=\"text\" id=\"name\" value={name} onChange={handleNameChange} />",
+		  "      </div>",
+		  "      <div>",
+		  "        <label htmlFor=\"email\">Email:</label>",
+		  "        <input type=\"email\" id=\"email\" value={email} onChange={handleEmailChange} />",
+		  "      </div>",
+		  "      <button type=\"submit\">Submit</button>",
+		  "    </form>",
+		  "  );",
+		  "}",
+		  "",
+		  "export default MyForm;",
+		  ""
+		],
+		"description": "formulaire React"
+	  },
+	  "useEffect Ready": {
+		"prefix": "useEffectReady",
+		"body": [
+		  "useEffect(() => { /* Vérifier import { useEffect } from 'react' */" ,
+		  "",
+		  "  }, []);"
+		],
+		"description": "useEffect Ready"
+	  },
+	  "map return array": {
+		"prefix": "map=>",
+		"body": [
+		  "map( item => item.variable);"
+		],
+		"description": "map return array"
+	  },
+	  "map number choose": {
+		"prefix": "mapNumber",
+		"body": [
+		  "{[...Array(10)].map((_, index) => (",
+		  "    <${1:Composant} key={index} />",
+		  "  ))}"
+		],
+		"description": "map number choose"
+	  },
+	  "useState Array Tableau": {
+		"prefix": "useStateForArray",
+		"body": [
+		  "const [${1:valeur},set${1:Valeur}] = useState([]);/* Vérifier import { useState } from 'react' */"
+		],
+		"description": "useState Array Tableau"
+	  },
+	  "map ready": {
+		"prefix": "map",
+		"body": [
+		  "{${1:items}.map((${1:item}, index/*index pour click*/) => (",
+		  "          ",
+		  "        ))}",
+		  ""
+		],
+		"description": "map ready"
+	  },
+}

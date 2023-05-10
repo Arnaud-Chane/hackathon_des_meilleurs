@@ -1,0 +1,36 @@
+{
+	"border": {
+		"prefix": "bsb",
+		"body": [
+		  "border: 2px solid black;"
+		],
+		"description": "border"
+	  },
+	  "display justify align": {
+		"prefix": "dja",
+		"body": [
+		  "display: flex;",
+		  "justify-content: center;",
+		  "align-items: center;"
+		],
+		"description": "display justify align"
+	  },
+	  "mediaquery Tablette": {
+		"prefix": "mediatablette",
+		"body": [
+		  "@media screen and (min-width: 768px) {",
+		  "",
+		  "  }"
+		],
+		"description": "mediaquery"
+	  },
+	  "mediaquery PC": {
+		"prefix": "mediaPC",
+		"body": [
+		  "@media screen and (min-width: 1024px) {",
+		  "",
+		  "  }"
+		],
+		"description": "mediaquery"
+	  }
+}
