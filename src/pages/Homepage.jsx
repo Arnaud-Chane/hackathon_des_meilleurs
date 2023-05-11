@@ -12,10 +12,12 @@ import HP_6 from "../assets/images/Wizard/HP_6.svg";
 import nimbus from "../assets/images/Wizard/nimbus.svg";
 import cheminette from "../assets/images/Wizard/cheminette.svg";
 import malefoy from "../assets/images/Wizard/malefoy.svg";
+import dobby from "../assets/images/Wizard/dobby.svg";
 import poudlard from "../assets/images/Wizard/poudlard.svg";
 import weasley from "../assets/images/Wizard/weasley.svg";
 import pre_au_lard from "../assets/images/Wizard/pré_au_lard.svg";
 import caribbean from "../assets/images/CaribbeanCruise/Caribbean.svg";
+import calypso from "../assets/images/CaribbeanCruise/Calypso.svg";
 import CAR_1 from "../assets/images/CaribbeanCruise/CAR_1.svg";
 import CAR_2 from "../assets/images/CaribbeanCruise/CAR_2.svg";
 import CAR_3 from "../assets/images/CaribbeanCruise/CAR_3.svg";
@@ -38,6 +40,7 @@ import LORD_6 from "../assets/images/MiddleEarth/LORD_6.svg";
 import horses from "../assets/images/MiddleEarth/horses.svg";
 import TheMoria from "../assets/images/MiddleEarth/The Moria.svg";
 import Gwaihir from "../assets/images/MiddleEarth/Gwaihir.svg";
+import gollum from "../assets/images/MiddleEarth/gollum.svg";
 import lordoftherings from "../assets/images/MiddleEarth/lord-of-the-rings.svg";
 import maisonhobbit from "../assets/images/MiddleEarth/maison_hobbit.svg";
 import Rivendell from "../assets/images/MiddleEarth/Rivendell.svg";
@@ -54,6 +57,7 @@ import etoiledelamort from "../assets/images/StarWars/étoile_de_la_mort.svg";
 import galaxies from "../assets/images/StarWars/galaxie.svg";
 import naboo from "../assets/images/StarWars/naboo.svg";
 import Tatooine from "../assets/images/StarWars/tatooine.svg";
+import jarjarbinks from "../assets/images/StarWars/jarjarbinks.svg";
 import avatar from "../assets/images/Pandora/avatar_3.svg";
 import AV_1 from "../assets/images/Pandora/AV_1.svg";
 import AV_2 from "../assets/images/Pandora/AV_2.svg";
@@ -88,6 +92,7 @@ function Homepage() {
           cardImage4: GAL_4,
           cardImage5: GAL_5,
           cardImage6: GAL_6,
+          guideImg: jarjarbinks,
           title6: "Tatooine",
           destination6:
             "Experience the desert planet's rugged charm, encounter fascinating species, and visit iconic locations from the Star Wars saga",
@@ -136,6 +141,7 @@ function Homepage() {
           cardImage4: LORD_4,
           cardImage5: LORD_5,
           cardImage6: LORD_6,
+          guideImg: gollum,
           title6: "Rivendell",
           destination6:
             "Seek refuge in the tranquil sanctuary of Rivendell, an elven haven surrounded by serene beauty and wisdom.",
@@ -184,6 +190,7 @@ function Homepage() {
           cardImage4: AV_4,
           cardImage5: AV_5,
           cardImage6: AV_6,
+          guideImg: NEYTIRI,
           title6: "Cove of the Ancestors",
           destination6:
             "Journey to this sacred place, where the spirits of the Na'vi ancestors dwell, offering tranquility and spiritual enlightenment",
@@ -237,6 +244,7 @@ function Homepage() {
           cardImage4: CAR_4,
           cardImage5: CAR_5,
           cardImage6: CAR_6,
+          guideImg: calypso,
           title6: "Tortuga Island",
           destination6:
             "Immerse yourself in the vibrant and lively atmosphere of Tortuga Island, where pirates once roamed and treasures await to be discovered.",
@@ -290,6 +298,7 @@ function Homepage() {
           cardImage4: HP_4,
           cardImage5: HP_5,
           cardImage6: HP_6,
+          guideImg: dobby,
           title6: "Diagon Alley",
           destination6:
             "Immerse yourself in the bustling hub of wizarding commerce, where shops brim with magical wonders and enchantment awaits at every corner",
