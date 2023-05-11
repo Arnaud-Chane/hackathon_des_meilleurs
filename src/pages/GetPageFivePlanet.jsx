@@ -4,6 +4,7 @@ import TextDecrivePlanet from "../components/TextDecrivePlanet";
 import Card from "../components/Card";
 import nimbus from "../assets/images/Wizard/nimbus.svg";
 import cheminette from "../assets/images/Wizard/cheminette.svg";
+import faucon from "../assets/images/StarWars/faucon-millenium.svg";
 
 function GetPageFivePlanet() {
   const [dataWorld, setDataWorld] = useState([]);
@@ -14,11 +15,17 @@ function GetPageFivePlanet() {
     }
   }, []);
 
+  console.log(dataWorld);
+
   return (
     <div className="GetPageFivePlanet">
       <TextDecrivePlanet />
-      <Card cardFront={dataWorld.cardImage2} cardBack={dataWorld.cardImage4} />
-      {console.log(dataWorld.cardImage3)}
+      <Card cardFront={nimbus} cardBack={cheminette} />
+      <Card cardFront={faucon} cardBack={cheminette} />
+      <Card cardFront={faucon} cardBack={cheminette} />
+      <Card cardFront={faucon} cardBack={cheminette} />
+      <Card cardFront={faucon} cardBack={cheminette} />
+      <Card cardFront={faucon} cardBack={cheminette} />
     </div>
   );
 }

@@ -7,7 +7,7 @@ export default function NavBar() {
       <div className="logo-website">
         <img src={logo} alt="logo site web" />
         <h1>
-          <Link to={logo}>Mystic trips</Link>
+          <Link to="/">Mystic trips</Link>
         </h1>
       </div>
       <nav>
