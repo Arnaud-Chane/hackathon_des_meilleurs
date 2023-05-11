@@ -6,7 +6,6 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: solid 2px $app-corporate-color2;
-  padding: 0 0.5rem;
   height: 75px;
 
   .logo-website {
@@ -27,7 +26,7 @@
   }
 
   li {
-    margin-left: 1rem;
+    margin-right: 1rem;
     list-style-type: none;
     cursor: pointer;
   }
@@ -35,12 +34,19 @@
   a {
     color: $app-corporate-color2;
     text-decoration: none;
+    :hover {
+      color: $app-supporting-color;
+    }
+  }
+
+  img {
+    height: 73px;
   }
 }
 
 @media screen and (max-width: $tablet-size-portrait) {
   .nav-container {
-    height: 120px;
+    height: 170px;
 
     ul {
       flex-direction: column;
