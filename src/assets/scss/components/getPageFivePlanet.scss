@@ -1,0 +1,19 @@
+.GetPageFivePlanet {
+  /*  .GetPageFivePlanetTop {
+    border: 2px solid black;
+    height: 80vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30px 1fr 1fr 1fr 1fr 30px;
+    grid-template-rows: 20px 40vh 20px;
+  } */
+  .content-page {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+    padding: 2rem;
+  }
+}

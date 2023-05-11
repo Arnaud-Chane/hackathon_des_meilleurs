@@ -1,10 +1,17 @@
-$app-corporate-color1: #85242b;
-$app-corporate-color2: #111111;
+/* color */
+$app-corporate-color1: #283556;
+$app-corporate-color2: #d9d9d9;
 $app-supporting-color: #d1b082;
 $app-supporting-color2: #712e45;
 
+/* font */
+$app-primary-font: "Jacques Francois", sans-serif;
+$app-secondary-font: "Italianno", cursive;
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
 
-$phone-size-small: 320px;
+/* Media query */
+$phone-size-small: 375px;
 $phone-size-big: 560px;
 $tablet-size-portrait: 768px;
 $tablet-size-paysage: 1024px;
@@ -12,3 +19,6 @@ $tablet-size-big: 1336px;
 $desktop-size-small: 1448px;
 $desktop-size-medium: 1663px;
 $desktop-size-big: 1920px;
+
+/* Cursor */
+$pointer: pointer;

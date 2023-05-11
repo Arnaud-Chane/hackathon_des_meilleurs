@@ -1,0 +1,84 @@
+.ReservationNavbar {
+  border: solid 2px pink;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  width: auto;
+
+  button {
+    height: 60px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: lightblue;
+  }
+}
+
+.planet-page-guide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  img {
+    height: 60px;
+    width: auto;
+  }
+}
+
+.datePicPopup {
+  position: relative;
+  width: 350px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40%;
+  background-color: #21283a;
+  border-radius: 1rem;
+
+  h2 {
+    text-align: center;
+    color: #d9d9d9;
+    // margin-bottom: 40px;
+  }
+}
+
+.btn-submit {
+  width: 65px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: lightblue;
+}
+.btn-return {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-color: lightblue;
+  // color: $primary-colour;
+  height: 20px;
+  width: 20px;
+  border: none;
+  border-radius: 6rem;
+  outline: none;
+  font-weight: bolder;
+}
+
+.ReactModal__Content--after-open {
+  border: 0 !important;
+}
+.react-datepicker-wrapper {
+  display: inline-block;
+  padding: 0;
+  border: 0;
+  width: 100%;
+  margin: 30px 20px 30px 20px;
+}
+
+.react-datepicker__input-container {
+  position: relative;
+  display: inline-block;
+  width: 97%;
+  margin-left: 100px;
+}
