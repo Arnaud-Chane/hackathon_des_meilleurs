@@ -6,7 +6,7 @@ import dumbledore from "../assets/images/Wizard/dumbledore.svg";
 import caribbean from "../assets/images/CaribbeanCruise/Caribbean.svg";
 import lordOfTheRing from "../assets/images/MiddleEarth/lord-of-the-rings.svg";
 import galaxie from "../assets/images/StarWars/galaxie.svg";
-import avatar from "../assets/images/Pandora/avatar.svg";
+import avatar from "../assets/images/Pandora/avatar_3.svg";
 
 function Homepage() {
   const [dataAPI, setDataAPI] = useState([]);
