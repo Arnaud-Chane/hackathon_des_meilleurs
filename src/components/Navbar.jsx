@@ -36,6 +36,3 @@ export default function NavBar() {
     </div>
   );
 }
-
-//
-//<Link to="/CGU">CGUPage</Link>
