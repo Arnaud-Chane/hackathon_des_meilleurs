@@ -1,8 +1,7 @@
-@use '../mixins/mixins' as *;
+@use "../mixins/mixins" as *;
 
-.Homepage{
+.Homepage {
   @include color(blue);
-  border: 2px solid black;
   height: 80vh;
   width: 100%;
   display: flex;

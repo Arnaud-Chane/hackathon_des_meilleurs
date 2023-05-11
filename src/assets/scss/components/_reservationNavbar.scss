@@ -1,18 +1,14 @@
 .ReservationNavbar {
-  border: solid 2px pink;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100px;
-  width: auto;
 
-  button{
+  button {
     height: 60px;
     width: 300px;
     border-radius: 10px;
     background-color: lightblue;
   }
-
 }
 
 .planet-page-guide {
@@ -21,7 +17,7 @@
   align-items: center;
   gap: 10px;
 
-  img{
+  img {
     height: 60px;
     width: auto;
   }

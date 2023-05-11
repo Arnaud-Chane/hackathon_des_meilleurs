@@ -7,13 +7,15 @@
     grid-template-columns: 30px 1fr 1fr 1fr 1fr 30px;
     grid-template-rows: 20px 40vh 20px;
   } */
-  .content-page {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
-    justify-content: space-around;
-    height: 50vh;
-    padding: 2rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+
+  .reservation-navbar {
+    width: 100%;
   }
 }
