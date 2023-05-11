@@ -24,7 +24,7 @@ export default function NavBar() {
             <li>Caribbean cruise</li>
           </Link>
 
-          <Link to="/wisard">
+          <Link to="/wizard">
             <li>Wizard’s</li>
           </Link>
 

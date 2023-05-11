@@ -2,6 +2,7 @@ import React from "react";
 import dobby from "../assets/images/Wizard/dobby.svg";
 
 function ReservationNavbar() {
+  
   return (
     <div className="ReservationNavbar">
       <div className="planet-page-title">Wizard</div>
