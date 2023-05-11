@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Root from "./routes/root";
+
 import "./assets/scss/main.scss";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -9,11 +11,17 @@ import NotFoundPage from "./pages/NotFoundPage";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Homepage />,
-  },
-  {
-    path: "*",
-    element: <NotFoundPage />,
+    element: <Root />,
+    children: [
+      {
+        path: "/",
+        element: <Homepage />,
+      },
+      {
+        path: "*",
+        element: <NotFoundPage />,
+      },
+    ],
   },
 ]);
 
