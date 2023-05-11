@@ -8,11 +8,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import CGUPage from "./pages/CGUPage";
 import NotFoundPage from "./pages/NotFoundPage";
-import CaribbeanCruise from "./pages/CaribbeanCruise";
-import Wisard from "./pages/Wisard";
-import StarWars from "./pages/StarWars";
-import Pandora from "./pages/Pandora";
-import MiddleEarth from "./pages/MiddleEarth";
+// import CaribbeanCruise from "./pages/CaribbeanCruise";
+// import Wizard from "./pages/Wizard";
+// import StarWars from "./pages/StarWars";
+// import Pandora from "./pages/Pandora";
+// import MiddleEarth from "./pages/MiddleEarth";
 import GetPageFivePlanet from "./pages/GetPageFivePlanet";
 
 const router = createBrowserRouter([
@@ -30,26 +30,26 @@ const router = createBrowserRouter([
       },
       {
         path: "/caribbean-cruise",
-        element: <CaribbeanCruise />,
+        element: <GetPageFivePlanet />,
       },
       {
-        path: "/wisard",
-        element: <Wisard />,
+        path: "/wizard",
+        element: <GetPageFivePlanet />,
       },
       {
         path: "/star-wars",
-        element: <StarWars />,
+        element: <GetPageFivePlanet />,
       },
       {
         path: "/pandora",
-        element: <Pandora />,
+        element: <GetPageFivePlanet />,
       },
       {
         path: "/middle-earth",
-        element: <MiddleEarth />,
+        element: <GetPageFivePlanet />,
       },
       {
-        path: "/planet",
+        path: "/planets",
         element: <GetPageFivePlanet />,
       },
       {

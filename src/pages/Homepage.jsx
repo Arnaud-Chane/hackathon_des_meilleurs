@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import getAPIData from "../API/FetchData";
 import CardSocle from "../components/CardSocle";
 import dumbledore from "../assets/images/Wizard/dumbledore.svg";
@@ -8,7 +9,6 @@ import galaxie from "../assets/images/StarWars/galaxie.svg";
 import avatar from "../assets/images/Pandora/avatar.svg";
 
 function Homepage() {
-
   const [dataAPI, setDataAPI] = useState([]);
 
   useEffect(() => {
@@ -17,7 +17,8 @@ function Homepage() {
       const API = [
         {
           transform: "perspective(90px) rotateY(5deg)",
-          image: dumbledore,
+          image: galaxie,
+          path: "star-wars",
           zIndex: "10",
           id: 1,
           univers: "Far far away",
@@ -29,7 +30,8 @@ function Homepage() {
         },
         {
           transform: "perspective(90px) rotateY(3deg)",
-          image: caribbean,
+          image: lordOfTheRing,
+          path: "middle-earth",
           zIndex: "20",
           id: 2,
           univers: "Middle Earth",
@@ -41,7 +43,8 @@ function Homepage() {
         },
         {
           transform: "perspective(90px) rotateY(0deg)",
-          image: lordOfTheRing,
+          image: avatar,
+          path: "pandora",
           zIndex: "100",
           id: 3,
           univers: "Pandora",
@@ -58,7 +61,8 @@ function Homepage() {
         },
         {
           transform: "perspective(90px) rotateY(358deg)",
-          image: galaxie,
+          image: caribbean,
+          path: "caribbean-cruise",
           zIndex: "20",
           id: 4,
           univers: " Caribbean cruise",
@@ -75,7 +79,8 @@ function Homepage() {
         },
         {
           transform: "perspective(90px) rotateY(356deg)",
-          image: avatar,
+          image: dumbledore,
+          path: "wizard",
           zIndex: "10",
           id: 5,
           univers: "Wizard's",
@@ -97,11 +102,16 @@ function Homepage() {
     getDataLoad();
   }, []);
 
-
   return (
     <div className="Homepage">
       {dataAPI.map((itemCard, index) => (
-        <CardSocle transform={itemCard.transform} image={itemCard.image} zIndex={itemCard.zIndex} key={index} />
+        <Link to={`${itemCard.path}`} key={index} >
+          <CardSocle
+            transform={itemCard.transform}
+            image={itemCard.image}
+            zIndex={itemCard.zIndex}
+          />
+        </Link>
       ))}
       {/* {dataAPI.map((data) => (
         <div key={data.info.guide}>
