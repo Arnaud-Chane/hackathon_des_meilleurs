@@ -5,6 +5,7 @@ import Card from "../components/Card";
 import nimbus from "../assets/images/Wizard/nimbus.svg";
 import cheminette from "../assets/images/Wizard/cheminette.svg";
 import faucon from "../assets/images/StarWars/faucon-millenium.svg";
+import ReservationNavbar from "../components/ReservationNavbar";
 
 function GetPageFivePlanet() {
   const [dataWorld, setDataWorld] = useState([]);
@@ -19,13 +20,18 @@ function GetPageFivePlanet() {
 
   return (
     <div className="GetPageFivePlanet">
-      <TextDecrivePlanet />
-      <Card cardFront={nimbus} cardBack={cheminette} />
-      <Card cardFront={faucon} cardBack={cheminette} />
-      <Card cardFront={faucon} cardBack={cheminette} />
-      <Card cardFront={faucon} cardBack={cheminette} />
-      <Card cardFront={faucon} cardBack={cheminette} />
-      <Card cardFront={faucon} cardBack={cheminette} />
+      <div className="reservation-nav">
+        <ReservationNavbar />
+      </div>
+      <div className="content-page">
+        <TextDecrivePlanet />
+        <Card cardFront={nimbus} cardBack={cheminette} />
+        <Card cardFront={faucon} cardBack={cheminette} />
+        <Card cardFront={faucon} cardBack={cheminette} />
+        <Card cardFront={faucon} cardBack={cheminette} />
+        <Card cardFront={faucon} cardBack={cheminette} />
+        <Card cardFront={faucon} cardBack={cheminette} />
+      </div>
     </div>
   );
 }
