@@ -8,12 +8,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import CGUPage from "./pages/CGUPage";
 import NotFoundPage from "./pages/NotFoundPage";
-// import CaribbeanCruise from "./pages/CaribbeanCruise";
-// import Wizard from "./pages/Wizard";
-// import StarWars from "./pages/StarWars";
-// import Pandora from "./pages/Pandora";
-// import MiddleEarth from "./pages/MiddleEarth";
 import GetPageFivePlanet from "./pages/GetPageFivePlanet";
+import AboutUs from "./pages/AboutUs";
+import Contact from "./pages/Contact";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/CGU",
         element: <CGUPage />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
       {
         path: "/caribbean-cruise",
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: "/planets",
         element: <GetPageFivePlanet />,
+      },
+      {
+        path: "/about-us",
+        element: <AboutUs />,
       },
       {
         path: "*",
