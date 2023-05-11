@@ -1,0 +1,17 @@
+.title {
+    font-family: $app-secondary-font;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.text {
+    text-align: center;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem;
+}
