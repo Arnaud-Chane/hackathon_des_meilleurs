@@ -22,11 +22,11 @@ function Homepage() {
 
       <Link to="/">Home</Link>
       <Link to="/CGU">CGUPage</Link>
-      <Link to="/pirate-des-caraibes">pirate-des-caraibes</Link>
-      <Link to="/harry-potter">harry-potter</Link>
+      <Link to="/caribbean-cruise">caribbean-cruise</Link>
+      <Link to="/wisard">Wisard</Link>
       <Link to="/star-wars">star-wars</Link>
       <Link to="/pandora">pandora</Link>
-      <Link to="/la-terre-du-milieu">la-terre-du-milieu</Link>
+      <Link to="/middle-earth">MiddleEarth</Link>
 
 
     </div>

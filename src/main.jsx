@@ -8,11 +8,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import CGUPage from "./pages/CGUPage";
 import NotFoundPage from "./pages/NotFoundPage";
-import PirateDesCaraibes from "./pages/PirateDesCaraibes";
-import HarryPotter from "./pages/HarryPotter";
+import CaribbeanCruise from "./pages/CaribbeanCruise";
+import Wisard from "./pages/Wisard";
 import StarWars from "./pages/StarWars";
 import Pandora from "./pages/Pandora";
-import LaTerreDuMilieu from "./pages/LaTerreDuMilieu";
+import MiddleEarth from "./pages/MiddleEarth";
 
 const router = createBrowserRouter([
   {
@@ -28,12 +28,12 @@ const router = createBrowserRouter([
         element: <CGUPage />,
       },
       {
-        path: "/pirate-des-caraibes",
-        element: <PirateDesCaraibes />,
+        path: "/caribbean-cruise",
+        element: <CaribbeanCruise />,
       },
       {
-        path: "/harry-potter",
-        element: <HarryPotter />,
+        path: "/wisard",
+        element: <Wisard />,
       },
       {
         path: "/star-wars",
@@ -44,8 +44,8 @@ const router = createBrowserRouter([
         element: <Pandora />,
       },
       {
-        path: "/la-terre-du-milieu",
-        element: <LaTerreDuMilieu />,
+        path: "/middle-earth",
+        element: <MiddleEarth />,
       },
       {
         path: "*",
