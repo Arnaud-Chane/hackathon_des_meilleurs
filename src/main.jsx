@@ -13,6 +13,7 @@ import Wisard from "./pages/Wisard";
 import StarWars from "./pages/StarWars";
 import Pandora from "./pages/Pandora";
 import MiddleEarth from "./pages/MiddleEarth";
+import GetPageFivePlanet from "./pages/GetPageFivePlanet";
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "/middle-earth",
         element: <MiddleEarth />,
+      },
+      {
+        path: "/planet",
+        element: <GetPageFivePlanet />,
       },
       {
         path: "*",

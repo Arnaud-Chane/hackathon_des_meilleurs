@@ -1,23 +1,37 @@
-@use 'variables' as *;
-@use 'placeholder' as *;
-@use './mixins/mixins' as *;
-@use './components/homepage.scss' as *;
-@use './components/notFoundPage.scss' as *;
-@use './components/CGUPage.scss' as *;
+@use "variables" as *;
+@use "placeholder" as *;
+@use "./mixins/mixins" as *;
+@use "./components/homepage.scss" as *;
+@use "./components/notFoundPage.scss" as *;
+@use "./components/CGUPage.scss" as *;
+@use "./components/navbar.scss" as *;
 
 //pages
 @import "../scss/components/homepage.scss";
 @import "../scss/components/cardSocle.scss";
+@import "../scss/components/getPageFivePlanet.scss";
+
+//components
+@import "../scss/components/textDecrivePlanet.scss";
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $app-primary-font;
 }
 
 body {
   margin: 0;
+  font-family: $app-primary-font;
+  background-color: $app-corporate-color1;
+  color: $app-corporate-color2;
+  line-height: 1.5;
+  height: 100vh;
+  width: 100%;
+  border: 2px solid red;
 }
 
-
-
-
-
+h1 {
+  padding: 0.5rem;
+}

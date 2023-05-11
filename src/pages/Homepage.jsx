@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import getAPIData from "../API/FetchData";
 import CardSocle from "../components/CardSocle";
 
@@ -89,14 +88,6 @@ function Homepage() {
       {dataAPI.map((data) => (
         <li key={data.info.guide}>{data.info.guide}</li>
       ))}
-
-      <Link to="/">Home</Link>
-      <Link to="/CGU">CGUPage</Link>
-      <Link to="/caribbean-cruise">caribbean-cruise</Link>
-      <Link to="/wisard">Wisard</Link>
-      <Link to="/star-wars">star-wars</Link>
-      <Link to="/pandora">pandora</Link>
-      <Link to="/middle-earth">MiddleEarth</Link>
     </div>
   );
 }
