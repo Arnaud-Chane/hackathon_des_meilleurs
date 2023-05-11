@@ -1,3 +1,11 @@
 @mixin color($color) {
   color: $color;
 }
+
+@mixin card {
+  cursor: pointer;
+  box-shadow: 8px 8px 8px #777;
+  border-radius: 40px;
+  background-color: $app-corporate-color1;
+  border: none;
+}

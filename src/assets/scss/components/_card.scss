@@ -1,0 +1,35 @@
+@use "../variables" as *;
+@use "../mixins/mixins" as *;
+
+.card {
+  border: solid 2px yellow;
+  width: 100%;
+
+  .card-front {
+    position: absolute;
+    transform: rotateY(90deg);
+    transition: all ease-in 0.2s;
+  }
+
+  .flipped .card-front {
+    transform: rotateY(0deg);
+    transition-delay: 0.2s;
+  }
+
+  // back of card
+  .card-back {
+    display: flex;
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+    cursor: pointer;
+    box-shadow: 8px 8px 8px #777;
+    background-color: $app-corporate-color1;
+    border: none;
+    border-radius: 40px;
+  }
+
+  .flipped .card-back {
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+  }
+}
