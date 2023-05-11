@@ -10,17 +10,10 @@ export default function Card({ cardFront, cardBack }) {
   return (
     <div className="card">
       <div className={flipped ? "flipped" : ""} onClick={handleClick}>
-        <img
-          className="card-flipped card-front"
-          src={cardFront}
-          alt="card front"
-        />
-
-        <img
-          className="card-flipped card-back"
-          src={cardBack}
-          alt="card back"
-        />
+        <img className="card-front" src={cardFront} alt="card front" />
+        <button type="button" className="card-back">
+          <img src={cardBack} alt="card back" />
+        </button>
       </div>
     </div>
   );

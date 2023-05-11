@@ -9,6 +9,7 @@
     position: absolute;
     transform: rotateY(90deg);
     transition: all ease-in 0.2s;
+    width: 260px;
   }
 
   .flipped .card-front {
@@ -21,10 +22,20 @@
     display: flex;
     transition: all ease-in 0.2s;
     transition-delay: 0.2s;
+    width: 260px;
   }
 
   .flipped .card-back {
     transform: rotateY(90deg);
     transition-delay: 0s;
+  }
+}
+
+@media screen and (max-width: $tablet-size-paysage) {
+  .card {
+    .card-front,
+    .card-back {
+      width: 194px;
+    }
   }
 }

@@ -3,10 +3,40 @@ import { Link } from "react-router-dom";
 import getAPIData from "../API/FetchData";
 import CardSocle from "../components/CardSocle";
 import dumbledore from "../assets/images/Wizard/dumbledore.svg";
+import HP_1 from "../assets/images/Wizard/HP_1.svg";
+import HP_2 from "../assets/images/Wizard/HP_2.svg";
+import HP_3 from "../assets/images/Wizard/HP_3.svg";
+import HP_4 from "../assets/images/Wizard/HP_4.svg";
+import HP_5 from "../assets/images/Wizard/HP_5.svg";
+import HP_6 from "../assets/images/Wizard/HP_6.svg";
 import caribbean from "../assets/images/CaribbeanCruise/Caribbean.svg";
+import CAR_1 from "../assets/images/CaribbeanCruise/CAR_1.svg";
+import CAR_2 from "../assets/images/CaribbeanCruise/CAR_2.svg";
+import CAR_3 from "../assets/images/CaribbeanCruise/CAR_3.svg";
+import CAR_4 from "../assets/images/CaribbeanCruise/CAR_4.svg";
+import CAR_5 from "../assets/images/CaribbeanCruise/CAR_5.svg";
+import CAR_6 from "../assets/images/CaribbeanCruise/CAR_6.svg";
 import lordOfTheRing from "../assets/images/MiddleEarth/lord-of-the-rings.svg";
+import LORD_1 from "../assets/images/MiddleEarth/LORD_1.svg";
+import LORD_2 from "../assets/images/MiddleEarth/LORD_2.svg";
+import LORD_3 from "../assets/images/MiddleEarth/LORD_3.svg";
+import LORD_4 from "../assets/images/MiddleEarth/LORD_4.svg";
+import LORD_5 from "../assets/images/MiddleEarth/LORD_5.svg";
+import LORD_6 from "../assets/images/MiddleEarth/LORD_6.svg";
 import galaxie from "../assets/images/StarWars/galaxie.svg";
+import GAL_1 from "../assets/images/StarWars/GAL_1.svg";
+import GAL_2 from "../assets/images/StarWars/GAL_2.svg";
+import GAL_3 from "../assets/images/StarWars/GAL_3.svg";
+import GAL_4 from "../assets/images/StarWars/GAL_4.svg";
+import GAL_5 from "../assets/images/StarWars/GAL_5.svg";
+import GAL_6 from "../assets/images/StarWars/GAL_6.svg";
 import avatar from "../assets/images/Pandora/avatar_3.svg";
+import AV_1 from "../assets/images/Pandora/AV_1.svg";
+import AV_2 from "../assets/images/Pandora/AV_2.svg";
+import AV_3 from "../assets/images/Pandora/AV_3.svg";
+import AV_4 from "../assets/images/Pandora/AV_4.svg";
+import AV_5 from "../assets/images/Pandora/AV_5.svg";
+import AV_6 from "../assets/images/Pandora/AV_6.svg";
 
 function Homepage() {
   const [dataAPI, setDataAPI] = useState([]);
@@ -16,6 +46,12 @@ function Homepage() {
       let data = await getAPIData();
       const API = [
         {
+          cardImage1: GAL_1,
+          cardImage2: GAL_2,
+          cardImage3: GAL_3,
+          cardImage4: GAL_4,
+          cardImage5: GAL_5,
+          cardImage6: GAL_6,
           title6: "Tatooine",
           destination6:
             "Experience the desert planet's rugged charm, encounter fascinating species, and visit iconic locations from the Star Wars saga",
@@ -38,7 +74,7 @@ function Homepage() {
           transport1:
             "A legendary spacecraft that navigates the galaxy with speed and agility.",
           description:
-            "Embark on an otherworldly adventure to a realm steeped in legends and intergalactic wonders. Travel aboard spaceships, guided by the endearing Jar Jar Binks, as you traverse a universe of limitless possibilities",
+            "Embark on an otherworldly adventure to a realm steeped in legends and intergalactic wonders. Travel aboard spaceships, guided by the endearing Jar Jar Binks, as you traverse a universe of limitless possibilities.",
           transform: "perspective(90px) rotateY(5deg)",
           image: galaxie,
           path: "star-wars",
@@ -52,6 +88,12 @@ function Homepage() {
           },
         },
         {
+          cardImage1: LORD_1,
+          cardImage2: LORD_2,
+          cardImage3: LORD_3,
+          cardImage4: LORD_4,
+          cardImage5: LORD_5,
+          cardImage6: LORD_6,
           title6: "Rivendell",
           destination6:
             "Seek refuge in the tranquil sanctuary of Rivendell, an elven haven surrounded by serene beauty and wisdom.",
@@ -88,6 +130,12 @@ function Homepage() {
           },
         },
         {
+          cardImage1: AV_1,
+          cardImage2: AV_2,
+          cardImage3: AV_3,
+          cardImage4: AV_4,
+          cardImage5: AV_5,
+          cardImage6: AV_6,
           title6: "Cove of the Ancestors",
           destination6:
             "Journey to this sacred place, where the spirits of the Na'vi ancestors dwell, offering tranquility and spiritual enlightenment",
@@ -129,6 +177,12 @@ function Homepage() {
           },
         },
         {
+          cardImage1: CAR_1,
+          cardImage2: CAR_2,
+          cardImage3: CAR_3,
+          cardImage4: CAR_4,
+          cardImage5: CAR_5,
+          cardImage6: CAR_6,
           title6: "Tortuga Island",
           destination6:
             "Immerse yourself in the vibrant and lively atmosphere of Tortuga Island, where pirates once roamed and treasures await to be discovered.",
@@ -151,7 +205,7 @@ function Homepage() {
           transport1:
             "Set sail on the infamous Black Pearl, a pirate ship steeped in legend and known for its swiftness and cunning",
           description:
-            "Set sail on a thrilling Caribbean cruise aboard the legendary ships. Let the mythical Calypso be your guide as you explore the mysteries and delights of the Caribbean",
+            "Set sail on a thrilling Caribbean cruise aboard the legendary ships. Let the mythical Calypso be your guide as you explore the mysteries and delights of the Caribbean.",
           transform: "perspective(90px) rotateY(358deg)",
           image: caribbean,
           path: "caribbean-cruise",
@@ -170,6 +224,12 @@ function Homepage() {
           },
         },
         {
+          cardImage1: HP_1,
+          cardImage2: HP_2,
+          cardImage3: HP_3,
+          cardImage4: HP_4,
+          cardImage5: HP_5,
+          cardImage6: HP_6,
           title6: "Diagon Alley",
           destination6:
             "Immerse yourself in the bustling hub of wizarding commerce, where shops brim with magical wonders and enchantment awaits at every corner",
@@ -190,7 +250,7 @@ function Homepage() {
           title1: "Nimbus 2000",
           transport1: "Glide through the skies on a broomstick",
           description:
-            "Step into the magical realm of wizards and witches, where transportation comes in the form of broomstick and Floo powder. Accompanied by the loyal Dobby, embark on enchanting adventures in the world of magic",
+            "Step into the magical realm of wizards and witches, where transportation comes in the form of broomstick and Floo powder. Accompanied by the loyal Dobby, embark on enchanting adventures in the world of magic.",
           transform: "perspective(90px) rotateY(356deg)",
           image: dumbledore,
           path: "wizard",
@@ -235,12 +295,6 @@ function Homepage() {
           />
         </Link>
       ))}
-      {/* {dataAPI.map((data) => (
-        <div key={data.info.guide}>
-          <li >{data.id}</li>
-          <li >{data.info.guide}</li>
-        </div>
-      ))} */}
     </div>
   );
 }
