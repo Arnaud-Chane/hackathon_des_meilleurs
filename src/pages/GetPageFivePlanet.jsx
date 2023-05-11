@@ -17,7 +17,11 @@ function GetPageFivePlanet() {
   return (
     <div className="GetPageFivePlanet">
       <TextDecrivePlanet />
-      <Card cardFront={nimbus} cardBack={cheminette} />
+      {dataWorld.map((data, i) => (
+        <div className="card-data" key={[i]}>
+          <Card cardFront={data.image} cardBack={cheminette} />
+        </div>
+      ))}
     </div>
   );
 }

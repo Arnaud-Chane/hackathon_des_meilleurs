@@ -101,6 +101,7 @@ function Homepage() {
     }
     getDataLoad();
   }, []);
+
   const handleClick = (item) => {
     localStorage.setItem("dataWorld", JSON.stringify([item]));
   };
