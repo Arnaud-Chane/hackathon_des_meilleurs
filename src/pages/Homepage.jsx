@@ -1,22 +1,13 @@
 import React, { useState, useEffect } from "react";
 import getAPIData from "../API/FetchData";
 import CardSocle from "../components/CardSocle";
-import dumbledore from "../assets/images/dumbledore.svg";
-import caribbean from "../assets/images/Caribbean.svg";
-import lordOfTheRing from "../assets/images/lord-of-the-rings.svg";
-import galaxie from "../assets/images/galaxie.svg";
-import avatar from "../assets/images/avatar.svg";
-
+import dumbledore from "../assets/images/Wizard/dumbledore.svg";
+import caribbean from "../assets/images/CaribbeanCruise/Caribbean.svg";
+import lordOfTheRing from "../assets/images/MiddleEarth/lord-of-the-rings.svg";
+import galaxie from "../assets/images/StarWars/galaxie.svg";
+import avatar from "../assets/images/Pandora/avatar.svg";
 
 function Homepage() {
-  const transformCard = [
-    "rotate3d(2, -8, -1, 50deg) scale(1) matrix(2, 0, 0, 1, 45, 35)",
-    "rotate3d(2, -8, -1, 30deg) scale(1.1) matrix(1.5, 0, 0, 1, 10, 0)",
-    "rotate3d(0, 0, 0, 0deg) scale(1.2) scaleX(1.5)",
-    "rotate3d(2, 8, 1, 30deg) scale(1.1)  matrix(1.5, 0, 0, 1, -10, 0)",
-    "rotate3d(1, 10, 1, 50deg) scale(1) matrix(2, 0, 0, 1, -45, 35)",
-  ];
-
   const [dataAPI, setDataAPI] = useState([]);
 
   useEffect(() => {
@@ -33,7 +24,7 @@ function Homepage() {
             transport: ["Millennium Falcon", "Star Destroyer"],
             guide: "Jar jar binks",
             destination: ["Death star", "Endor", "Naboo", "Tatooine"],
-            imgURLDestination: ["../assets/1", "../assets/2" ]
+            imgURLDestination: ["../assets/1", "../assets/2"],
           },
         },
         {
@@ -101,12 +92,23 @@ function Homepage() {
     }
     getDataLoad();
   }, []);
-
+  const handleClick = (item) => {
+    localStorage.setItem("dataWorld", JSON.stringify([item]));
+  };
 
   return (
     <div className="Homepage">
       {dataAPI.map((itemCard, index) => (
-        <CardSocle transform={itemCard.transform} image={itemCard.image} zIndex={itemCard.zIndex} key={index} />
+        <CardSocle
+          transform={itemCard.transform}
+          image={itemCard.image}
+          zIndex={itemCard.zIndex}
+          key={index}
+          index={index}
+          handleClick={() => {
+            handleClick(itemCard);
+          }}
+        />
       ))}
 
       {/* {dataAPI.map((data) => (
