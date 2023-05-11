@@ -31,6 +31,11 @@
     list-style-type: none;
     cursor: pointer;
   }
+
+  a {
+    color: $app-corporate-color2;
+    text-decoration: none;
+  }
 }
 
 @media screen and (max-width: $tablet-size-portrait) {

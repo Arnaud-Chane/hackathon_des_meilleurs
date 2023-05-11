@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function NavBar() {
   return (
     <div className="nav-container">
@@ -5,17 +7,36 @@ export default function NavBar() {
         <div>
           logo <br /> img
         </div>
-        <h1>Mystic trips</h1>
+        <h1>
+          <Link to="/">Mystic trips</Link>
+        </h1>
       </div>
       <nav>
         <ul>
-          <li>Far far away</li>
-          <li>Middle earth</li>
-          <li>Caribbean cruise</li>
-          <li>Wizard’s</li>
-          <li>Pandora</li>
+          <Link to="/star-wars">
+            <li>Far far away</li>
+          </Link>
+
+          <Link to="/middle-earth">
+            <li>Middle earth</li>
+          </Link>
+
+          <Link to="/caribbean-cruise">
+            <li>Caribbean cruise</li>
+          </Link>
+
+          <Link to="/wisard">
+            <li>Wizard’s</li>
+          </Link>
+
+          <Link to="/pandora">
+            <li>Pandora</li>
+          </Link>
         </ul>
       </nav>
     </div>
   );
 }
+
+//
+//<Link to="/CGU">CGUPage</Link>
