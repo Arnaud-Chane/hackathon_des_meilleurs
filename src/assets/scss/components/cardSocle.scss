@@ -1,7 +1,15 @@
 .CardSocle {
-    border: 2px solid rgb(0, 4, 230);
     height: 50vh;
     width: 150px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+
+    .imageHomePage {
+        background-size: cover;
+        background-position: center center;
+        height: 100%;
+    }
 }
 
 // transform: rotate3d(2, 10, 1, 33deg);
