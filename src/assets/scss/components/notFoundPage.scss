@@ -1,7 +1,7 @@
 @use '../mixins/mixins' as *;
 
 .NotFoundPage {
-
+  position: relative;
 }
 
 .title-404 {
@@ -12,4 +12,34 @@
 
 }
 
+// Define the keyframes
+@keyframes tumbleweed {
+  from {
+    transform: translateX(-100%) rotate(0deg);
+  }
+  to {
+    transform: translateX(100%) rotate(360deg);
+  }
+}
 
+// Apply the animation to an element
+.tumbleweed {
+  position: absolute;
+  animation: tumbleweed 3s ease-in-out infinite;
+}
+
+// Define the keyframes
+@keyframes move {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+// Apply the animation to an element
+.tumbleweed-ctn {
+  position: absolute;
+  animation: move 3s ease-in-out infinite;
+}

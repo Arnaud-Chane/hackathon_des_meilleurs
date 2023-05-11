@@ -1,0 +1,53 @@
+const [dataLike, setDataLike] = useState([]);
+  useEffect(() => {
+    const data = JSON.parse(localStorage.getItem("dataLike"));
+    if (data) {
+      setDataLike(data);
+    }
+  }, []);
+  const handleRemoveItem = (id) => {
+    const filteredData = dataLike.filter((item) => item.id !== id);
+    localStorage.setItem("dataLike", JSON.stringify(filteredData));
+    setDataLike(filteredData);
+  };
+
+
+
+  11:01
+
+
+const handleImageClick = (item) => {
+    localStorage.setItem("dataUser", JSON.stringify([item]));
+    const index = arraySpotifyImageUri.findIndex((obj) => obj === item);
+    const index2 = arraySpotifyImage.findIndex((obj) => obj === item);
+    console.info(item);
+    if (index !== -1) {
+      const correspondingPreview = arraySpotifyPreviewToObject[index];
+      localStorage.setItem("music", JSON.stringify([correspondingPreview]));
+      const correspondingNightClub = nightClubs[index];
+      localStorage.setItem(
+        "dataUser",
+        JSON.stringify([correspondingNightClub])
+      );
+    } else if (index2 !== -1) {
+      const correspondingPreview = arraySpotifyPreviewToObject[index2];
+      localStorage.setItem("music", JSON.stringify([correspondingPreview]));
+      const correspondingNightClub = nightClubs[index2];
+      localStorage.setItem(
+        "dataUser",
+        JSON.stringify([correspondingNightClub])
+      );
+    }
+  };
+
+
+
+
+  pour juste récupérer
+const [arraySpotifyImageUri, setArraySpotifyImageUri] = useState([]);
+  useEffect(() => {
+    const data = JSON.parse(localStorage.getItem("dataUser"));
+    if (data) {
+      setArraySpotifyImageUri(...data);
+    }
+  }, []);

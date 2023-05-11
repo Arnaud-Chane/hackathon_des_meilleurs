@@ -27,8 +27,6 @@ function Homepage() {
       <Link to="/star-wars">star-wars</Link>
       <Link to="/pandora">pandora</Link>
       <Link to="/middle-earth">MiddleEarth</Link>
-
-
     </div>
   );
 }

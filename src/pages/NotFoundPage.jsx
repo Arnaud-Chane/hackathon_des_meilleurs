@@ -18,7 +18,12 @@ export default function NotFoundPage() {
   return (
     <div className="NotFoundPage">
       <h1 className="title-404">404 Error: Page Not Found</h1>
-      <p className="content-404">{"Sorry, we couldn't find the page you were looking for."}</p>
+      <p className="content-404">
+        {"Sorry, we couldn't find the page you were looking for."}
+      </p>
+      <div className="tumbleweed-ctn">
+        <div className="tumbleweed">tumbleweed</div>
+      </div>
     </div>
   );
 }
