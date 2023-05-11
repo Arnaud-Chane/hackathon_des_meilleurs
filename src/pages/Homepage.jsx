@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react";
 import getAPIData from "../API/FetchData";
 import CardSocle from "../components/CardSocle";
+import dumbledore from "../assets/images/dumbledore.svg";
+import caribbean from "../assets/images/Caribbean.svg";
+import lordOfTheRing from "../assets/images/lord-of-the-rings.svg";
+import galaxie from "../assets/images/galaxie.svg";
+import avatar from "../assets/images/avatar.svg";
+
 
 function Homepage() {
   const transformCard = [
@@ -18,6 +24,9 @@ function Homepage() {
       let data = await getAPIData();
       const API = [
         {
+          transform: "perspective(90px) rotateY(5deg)",
+          image: dumbledore,
+          zIndex: "10",
           univers: "Far far away",
           imgURLUnivers: "../assets/",
           info: {
@@ -28,6 +37,9 @@ function Homepage() {
           },
         },
         {
+          transform: "perspective(90px) rotateY(3deg)",
+          image: caribbean,
+          zIndex: "20",
           univers: "Middle Earth",
           info: {
             transport: ["Gwaihir", "Horse"],
@@ -36,6 +48,9 @@ function Homepage() {
           },
         },
         {
+          transform: "perspective(90px) rotateY(0deg)",
+          image: lordOfTheRing,
+          zIndex: "100",
           univers: "Pandora",
           info: {
             transport: ["Ikran", "C-21 Dragon Assault Ship"],
@@ -49,6 +64,9 @@ function Homepage() {
           },
         },
         {
+          transform: "perspective(90px) rotateY(358deg)",
+          image: galaxie,
+          zIndex: "20",
           univers: " Caribbean cruise",
           info: {
             transport: ["Black Pearl", "Flying Dutchman"],
@@ -62,6 +80,9 @@ function Homepage() {
           },
         },
         {
+          transform: "perspective(90px) rotateY(356deg)",
+          image: avatar,
+          zIndex: "10",
           univers: "Wizard's",
           info: {
             transport: ["Nimbus 2000", "Floo powder"],
@@ -81,15 +102,16 @@ function Homepage() {
     getDataLoad();
   }, []);
 
+
   return (
     <div className="Homepage">
-      {transformCard.map((itemCard, index) => (
-        <CardSocle transform={itemCard} key={index} />
+      {dataAPI.map((itemCard, index) => (
+        <CardSocle transform={itemCard.transform} image={itemCard.image} zIndex={itemCard.zIndex} key={index} />
       ))}
 
-      {dataAPI.map((data) => (
+      {/* {dataAPI.map((data) => (
         <li key={data.info.guide}>{data.info.guide}</li>
-      ))}
+      ))} */}
     </div>
   );
 }
