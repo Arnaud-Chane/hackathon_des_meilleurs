@@ -20,30 +20,12 @@ function GetPageFivePlanet() {
       </div>
 
       <TextDecrivePlanet />
-      <Card
-        cardFront={dataWorld.destination1}
-        cardBack={dataWorld.cardImage1}
-      />
-      <Card
-        cardFront={dataWorld.destination2}
-        cardBack={dataWorld.cardImage2}
-      />
-      <Card
-        cardFront={dataWorld.destination3}
-        cardBack={dataWorld.cardImage3}
-      />
-      <Card
-        cardFront={dataWorld.destination4}
-        cardBack={dataWorld.cardImage4}
-      />
-      <Card
-        cardFront={dataWorld.destination5}
-        cardBack={dataWorld.cardImage5}
-      />
-      <Card
-        cardFront={dataWorld.destination6}
-        cardBack={dataWorld.cardImage6}
-      />
+      <Card cardFront={dataWorld.transport4} cardBack={dataWorld.cardImage1} />
+      <Card cardFront={dataWorld.transport5} cardBack={dataWorld.cardImage2} />
+      <Card cardFront={dataWorld.cardImage7} cardBack={dataWorld.cardImage3} />
+      <Card cardFront={dataWorld.cardImage8} cardBack={dataWorld.cardImage4} />
+      <Card cardFront={dataWorld.cardImage9} cardBack={dataWorld.cardImage5} />
+      <Card cardFront={dataWorld.cardImage10} cardBack={dataWorld.cardImage6} />
     </div>
   );
 }

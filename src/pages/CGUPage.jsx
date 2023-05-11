@@ -3,91 +3,28 @@ import React from "react";
 function CGUPage() {
   return (
     <div className="CGU-page">
-      <h2 className="title-header">Conditions Générales d'Utilisation</h2>
-
-      <div className="text-content">
-        Bienvenue dans notre application React. Nous sommes ravis de vous
-        compter parmi nos utilisateurs. Avant de commencer à utiliser nos
-        services, veuillez lire attentivement les présentes Conditions Générales
-        d'Utilisation (ou CGU).
-      </div>
-
-      <h2 className="title-section">1. Objet</h2>
-
-      <div className="text-content">
-        Nos services vous permettent d'accéder à une plateforme de création et
-        de gestion de projets. En utilisant notre application, vous acceptez les
-        présentes CGU ainsi que notre politique de confidentialité.
-      </div>
-
-      <h2 className="title-section">2. Conditions d'utilisation</h2>
-
-      <h2 className="title-sub-section">2.1 Accès à l'application</h2>
-
-      <div className="text-content">
-        Notre application est accessible gratuitement aux utilisateurs qui
-        disposent d'un accès à internet et à un navigateur web compatible. Nous
-        nous réservons le droit de modifier ou de suspendre notre service à tout
-        moment et sans préavis.
-      </div>
-
-      <h2 className="title-sub-section">2.2 Création d'un compte</h2>
-
-      <div className="text-content">
-        L'accès à certains services de l'application peut nécessiter la création
-        d'un compte utilisateur. Vous êtes entièrement responsable de la
-        confidentialité de votre compte et de votre mot de passe. Vous êtes
-        également responsable de toutes les activités qui se produisent sur
-        votre compte.
-      </div>
-
-      <h2 className="title-sub-section">2.3 Utilisation du service</h2>
-
-      <div className="text-content">
-        Vous devez utiliser notre application conformément à la loi et aux
-        présentes CGU. Vous ne pouvez pas utiliser notre application de manière
-        inappropriée ou pour des activités illégales. Nous nous réservons le
-        droit de suspendre ou de résilier votre compte si nous soupçonnons une
-        utilisation inappropriée de notre application.
-      </div>
-
-      <h2 className="title-section">3. Propriété intellectuelle</h2>
-
-      <div className="text-content">
-        Notre application et tous les contenus et éléments qui y sont associés
-        (tels que les logos, les marques, le code source, etc.) sont la
-        propriété exclusive de notre entreprise et sont protégés par les lois
-        sur la propriété intellectuelle en vigueur. L'utilisation non autorisée
-        de notre application ou de nos contenus peut entraîner des poursuites
-        judiciaires.
-      </div>
-
-      <h2 className="title-section">4. Limitation de responsabilité</h2>
-
-      <div className="text-content">
-        Notre entreprise ne peut être tenue responsable de tout dommage direct
-        ou indirect causé par l'utilisation de notre application. Nous ne
-        pouvons garantir la disponibilité ou la qualité de nos services, ni leur
-        compatibilité avec tous les systèmes informatiques.
-      </div>
-
-      <h2 className="title-section">5. Modification des CGU</h2>
-
-      <div className="text-content">
-        Nous pouvons modifier les présentes CGU à tout moment et sans préavis.
-        Il vous appartient de consulter régulièrement cette page pour prendre
-        connaissance des éventuelles modifications. Votre utilisation continue
-        de notre application après la publication des modifications constitue
-        une acceptation tacite des nouvelles CGU.
-      </div>
-
-      <h2 className="title-section">6. Contact</h2>
-
-      <div className="text-content">
-        Si vous avez des questions ou des préoccupations concernant notre
-        application ou les présentes CGU, n'hésitez pas à nous contacter à
-        l'adresse e-mail suivante : contact-juste-les-meilleurs@nous.com.
-      </div>
+      <h2 className="title_legal">Legal notice</h2>
+      <br></br>
+      <p className="text_legal" >Informations générales
+Ce site est exploité par Mystic Trips, une société immatriculée au Registre du commerce sous le numéro 12346563. Le siège social de l'entreprise est situé à Bordeaux.
+Directeur de la publication
+Le directeur de la publication du site agissant en qualité de directeur.
+Hébergement
+Ce site est hébergé par un hébergeur, dont le siège social est situé à Bordeaux.
+Propriété intellectuelle
+Tous les contenus présents sur ce site, y compris les textes, les images, les graphiques, les logos, les vidéos, les éléments sonores et les logiciels, sont la propriété de Mystic Trips ou de ses partenaires et sont protégés par les lois relatives à la propriété intellectuelle.
+Toute reproduction, représentation, modification, distribution ou exploitation de tout ou partie des contenus, sans autorisation préalable écrite de [Nom de l'entreprise], est strictement interdite et peut constituer une violation des droits de propriété intellectuelle.
+Liens vers des sites tiers
+Ce site peut contenir des liens vers des sites web exploités par des tiers. Ces liens sont fournis à titre informatif et [Nom de l'entreprise] n'exerce aucun contrôle sur le contenu de ces sites. Par conséquent, [Nom de l'entreprise] décline toute responsabilité quant aux contenus, aux pratiques ou aux politiques de confidentialité des sites tiers liés.
+Limitation de responsabilité
+L'utilisation de ce site se fait aux risques de l'utilisateur. Mystic Trips ne peut être tenu responsable des dommages directs ou indirects, y compris la perte de données, la perte de revenus, la perte de bénéfices ou toute autre perte ou dommage résultant de l'utilisation de ce site ou de l'impossibilité de l'utiliser.
+Protection des données personnelles
+Pour plus d'informations sur la manière dont nous collectons, utilisons et protégeons vos données personnelles, veuillez consulter notre politique de confidentialité.
+Droit applicable et juridiction compétente
+Ces mentions légales sont régies par le droit en vigueur dans [pays]. Tout litige relatif à l'utilisation de ce site sera soumis à la compétence exclusive des tribunaux de [ville ou région compétente].
+Ces mentions légales sont susceptibles d'être modifiées à tout moment. Nous vous invitons à les consulter régulièrement.
+Si vous avez des questions concernant ces mentions légales, veuillez nous contacter</p>
+      
     </div>
   );
 }

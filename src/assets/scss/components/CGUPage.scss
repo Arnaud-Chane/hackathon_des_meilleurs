@@ -1,24 +1,13 @@
 @use '../mixins/mixins' as *;
 
-.CGU-page {
-
-
+.title_legal {
+    text-align: center;
+    font-family: "Italianno";
+    font-size: 4rem;
 }
 
-.title-header {
-
+.text_legal {
+    text-align:center;
+    margin: 0 auto;
+    padding: 2rem;
 }
-
-.title-section {
-
-}
-
-.title-sub-section {
-
-}
-
-.text-content {
-
-}
-
-
