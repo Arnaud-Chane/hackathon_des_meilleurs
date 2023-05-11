@@ -19,10 +19,12 @@ function Homepage() {
       const API = [
         {
           univers: "Far far away",
+          imgURLUnivers: "../assets/",
           info: {
             transport: ["Millennium Falcon", "Star Destroyer"],
             guide: "Jar jar binks",
             destination: ["Death star", "Endor", "Naboo", "Tatooine"],
+            imgURLDestination: ["../assets/1", "../assets/2" ]
           },
         },
         {
