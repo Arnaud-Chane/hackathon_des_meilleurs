@@ -28,17 +28,17 @@ function Homepage() {
         <CardSocle transform={itemCard} key={index} />
       ))}
 
-      {dataAPI.map((data) => (
+      {/* {dataAPI.map((data) => (
         <li key={data.name}>{data.name}</li>
-      ))}
+      ))} */}
 
-      <Link to="/">Home</Link>
+      {/* <Link to="/">Home</Link>
       <Link to="/CGU">CGUPage</Link>
       <Link to="/caribbean-cruise">caribbean-cruise</Link>
       <Link to="/wisard">Wisard</Link>
       <Link to="/star-wars">star-wars</Link>
       <Link to="/pandora">pandora</Link>
-      <Link to="/middle-earth">MiddleEarth</Link>
+      <Link to="/middle-earth">MiddleEarth</Link> */}
 
     </div>
   );
