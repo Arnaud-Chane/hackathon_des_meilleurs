@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import getAPIData from "../API/FetchData";
 import CardSocle from "../components/CardSocle";
-import dumbledore from "../assets/images/dumbledore.svg";
-import caribbean from "../assets/images/Caribbean.svg";
-import lordOfTheRing from "../assets/images/lord-of-the-rings.svg";
-import galaxie from "../assets/images/galaxie.svg";
-import avatar from "../assets/images/avatar.svg";
-
+import dumbledore from "../assets/images/Wizard/dumbledore.svg";
+import caribbean from "../assets/images/CaribbeanCruise/Caribbean.svg";
+import lordOfTheRing from "../assets/images/MiddleEarth/lord-of-the-rings.svg";
+import galaxie from "../assets/images/StarWars/galaxie.svg";
+import avatar from "../assets/images/Pandora/avatar.svg";
 
 function Homepage() {
 
