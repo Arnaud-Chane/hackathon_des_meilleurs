@@ -1,8 +1,9 @@
 .textDecrivePlanet {
-    border: 2px solid rgb(50, 40, 146);
-    grid-column: 2 / 4;
-    grid-row: 2 / 3;
-    word-wrap: break-word;
+  border: 2px solid rgb(50, 40, 146);
+  /* grid-column: 2 / 4;
+    grid-row: 2 / 3; */
+  width: 46%;
+  word-wrap: break-word;
   .textDecrivePlanetTitle {
     border: 2px solid black;
     text-align: center;

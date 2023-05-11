@@ -2,8 +2,8 @@
 @use "../mixins/mixins" as *;
 
 .card {
-  border: solid 2px yellow;
-  width: 100%;
+  border: 2px solid rgb(50, 40, 146);
+  word-wrap: break-word;
 
   .card-front {
     position: absolute;
@@ -21,11 +21,6 @@
     display: flex;
     transition: all ease-in 0.2s;
     transition-delay: 0.2s;
-    cursor: pointer;
-    box-shadow: 8px 8px 8px #777;
-    background-color: $app-corporate-color1;
-    border: none;
-    border-radius: 40px;
   }
 
   .flipped .card-back {
