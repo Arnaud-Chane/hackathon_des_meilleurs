@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function CardSocle({ transform, image, zIndex }) {
+function CardSocle({ transform, image, zIndex, index, handleClick }) {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleHover = () => {
@@ -10,6 +10,7 @@ function CardSocle({ transform, image, zIndex }) {
   const handleLeave = () => {
     setIsHovered(false);
   };
+
   return (
     <div
       className="CardSocle"
@@ -17,7 +18,12 @@ function CardSocle({ transform, image, zIndex }) {
       onMouseOver={handleHover}
       onMouseLeave={handleLeave}
     >
-      <img className="imageHomePage" src={image} alt="#" />
+      <img
+        className="imageHomePage"
+        src={image}
+        alt="#"
+        onClick={handleClick}
+      />
     </div>
   );
 }

@@ -101,10 +101,24 @@ function Homepage() {
     }
     getDataLoad();
   }, []);
+  const handleClick = (item) => {
+    localStorage.setItem("dataWorld", JSON.stringify([item]));
+  };
+
 
   return (
     <div className="Homepage">
       {dataAPI.map((itemCard, index) => (
+        <CardSocle
+          transform={itemCard.transform}
+          image={itemCard.image}
+          zIndex={itemCard.zIndex}
+          key={index}
+          index={index}
+          handleClick={() => {
+            handleClick(itemCard);
+          }}
+        />
         <Link to={`${itemCard.path}`} key={index} >
           <CardSocle
             transform={itemCard.transform}
