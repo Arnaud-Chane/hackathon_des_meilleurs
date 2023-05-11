@@ -5,6 +5,10 @@
 @use './components/notFoundPage.scss' as *;
 @use './components/CGUPage.scss' as *;
 
+//pages
+@import "../scss/components/homepage.scss";
+@import "../scss/components/cardSocle.scss";
+
 * {
   box-sizing: border-box;
 }
