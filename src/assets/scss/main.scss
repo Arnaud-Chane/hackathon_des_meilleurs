@@ -6,6 +6,10 @@
 @use "./components/CGUPage.scss" as *;
 @use "./components/navbar.scss" as *;
 
+//pages
+@import "../scss/components/homepage.scss";
+@import "../scss/components/cardSocle.scss";
+
 * {
   box-sizing: border-box;
   margin: 0;

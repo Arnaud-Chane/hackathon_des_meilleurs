@@ -2,4 +2,11 @@
 
 .Homepage{
   @include color(blue);
+  border: 2px solid black;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
 }
