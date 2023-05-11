@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import stars from "../assets/images/stars.svg";
 
 function TextDecrivePlanet() {
   const [dataWorld, setDataWorld] = useState([]);
@@ -28,6 +29,7 @@ function TextDecrivePlanet() {
 
   return (
     <div className="textDecrivePlanet">
+      <img src={stars} alt="image stars evaluation" />
       <p className="textDecrivePlanetParagraphe">{description}</p>
     </div>
   );
