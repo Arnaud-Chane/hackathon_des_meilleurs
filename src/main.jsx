@@ -8,6 +8,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import CGUPage from "./pages/CGUPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import PirateDesCaraibes from "./pages/PirateDesCaraibes";
+import HarryPotter from "./pages/HarryPotter";
+import StarWars from "./pages/StarWars";
+import Pandora from "./pages/Pandora";
+import LaTerreDuMilieu from "./pages/LaTerreDuMilieu";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +26,26 @@ const router = createBrowserRouter([
       {
         path: "/CGU",
         element: <CGUPage />,
+      },
+      {
+        path: "/pirate-des-caraibes",
+        element: <PirateDesCaraibes />,
+      },
+      {
+        path: "/harry-potter",
+        element: <HarryPotter />,
+      },
+      {
+        path: "/star-wars",
+        element: <StarWars />,
+      },
+      {
+        path: "/pandora",
+        element: <Pandora />,
+      },
+      {
+        path: "/la-terre-du-milieu",
+        element: <LaTerreDuMilieu />,
       },
       {
         path: "*",
