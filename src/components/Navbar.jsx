@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
+import logo from "../assets/images/logo.svg";
 
 export default function NavBar() {
   return (
     <div className="nav-container">
       <div className="logo-website">
-        <div>
-          logo <br /> img
-        </div>
+        <img src={logo} alt="logo site web" />
         <h1>
           <Link to="/">Mystic trips</Link>
         </h1>
@@ -37,6 +36,3 @@ export default function NavBar() {
     </div>
   );
 }
-
-//
-//<Link to="/CGU">CGUPage</Link>

@@ -1,12 +1,12 @@
 @use "../variables" as *;
 
-.nav-container {
+.nav-container-footer {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   border-bottom: solid 2px $app-corporate-color2;
-  height: 75px;
+  height: auto;
 
   .logo-website {
     display: flex;
@@ -16,7 +16,6 @@
 
   nav {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     align-items: baseline;
   }
