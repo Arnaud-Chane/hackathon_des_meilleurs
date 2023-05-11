@@ -9,13 +9,6 @@ import avatar from "../assets/images/avatar.svg";
 
 
 function Homepage() {
-  const transformCard = [
-    "rotate3d(2, -8, -1, 50deg) scale(1) matrix(2, 0, 0, 1, 45, 35)",
-    "rotate3d(2, -8, -1, 30deg) scale(1.1) matrix(1.5, 0, 0, 1, 10, 0)",
-    "rotate3d(0, 0, 0, 0deg) scale(1.2) scaleX(1.5)",
-    "rotate3d(2, 8, 1, 30deg) scale(1.1)  matrix(1.5, 0, 0, 1, -10, 0)",
-    "rotate3d(1, 10, 1, 50deg) scale(1) matrix(2, 0, 0, 1, -45, 35)",
-  ];
 
   const [dataAPI, setDataAPI] = useState([]);
 
@@ -27,19 +20,19 @@ function Homepage() {
           transform: "perspective(90px) rotateY(5deg)",
           image: dumbledore,
           zIndex: "10",
+          id: 1,
           univers: "Far far away",
-          imgURLUnivers: "../assets/",
           info: {
             transport: ["Millennium Falcon", "Star Destroyer"],
             guide: "Jar jar binks",
             destination: ["Death star", "Endor", "Naboo", "Tatooine"],
-            imgURLDestination: ["../assets/1", "../assets/2" ]
           },
         },
         {
           transform: "perspective(90px) rotateY(3deg)",
           image: caribbean,
           zIndex: "20",
+          id: 2,
           univers: "Middle Earth",
           info: {
             transport: ["Gwaihir", "Horse"],
@@ -51,6 +44,7 @@ function Homepage() {
           transform: "perspective(90px) rotateY(0deg)",
           image: lordOfTheRing,
           zIndex: "100",
+          id: 3,
           univers: "Pandora",
           info: {
             transport: ["Ikran", "C-21 Dragon Assault Ship"],
@@ -67,6 +61,7 @@ function Homepage() {
           transform: "perspective(90px) rotateY(358deg)",
           image: galaxie,
           zIndex: "20",
+          id: 4,
           univers: " Caribbean cruise",
           info: {
             transport: ["Black Pearl", "Flying Dutchman"],
@@ -83,6 +78,7 @@ function Homepage() {
           transform: "perspective(90px) rotateY(356deg)",
           image: avatar,
           zIndex: "10",
+          id: 5,
           univers: "Wizard's",
           info: {
             transport: ["Nimbus 2000", "Floo powder"],
@@ -108,9 +104,11 @@ function Homepage() {
       {dataAPI.map((itemCard, index) => (
         <CardSocle transform={itemCard.transform} image={itemCard.image} zIndex={itemCard.zIndex} key={index} />
       ))}
-
       {/* {dataAPI.map((data) => (
-        <li key={data.info.guide}>{data.info.guide}</li>
+        <div key={data.info.guide}>
+          <li >{data.id}</li>
+          <li >{data.info.guide}</li>
+        </div>
       ))} */}
     </div>
   );
