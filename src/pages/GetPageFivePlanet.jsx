@@ -10,14 +10,15 @@ function GetPageFivePlanet() {
   useEffect(() => {
     const data = JSON.parse(localStorage.getItem("dataWorld"));
     if (data) {
-      setDataWorld(data);
+      setDataWorld(...data);
     }
   }, []);
 
   return (
     <div className="GetPageFivePlanet">
       <TextDecrivePlanet />
-      <Card cardFront={nimbus} cardBack={cheminette} />
+      <Card cardFront={dataWorld.cardImage2} cardBack={dataWorld.cardImage4} />
+      {console.log(dataWorld.cardImage3)}
     </div>
   );
 }
