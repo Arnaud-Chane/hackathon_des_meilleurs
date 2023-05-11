@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import getAPIData from "../API/FetchData";
 import CardSocle from "../components/CardSocle";
 import dumbledore from "../assets/images/Wizard/dumbledore.svg";
 import caribbean from "../assets/images/CaribbeanCruise/Caribbean.svg";
 import lordOfTheRing from "../assets/images/MiddleEarth/lord-of-the-rings.svg";
 import galaxie from "../assets/images/StarWars/galaxie.svg";
-import avatar from "../assets/images/Pandora/avatar.svg";
+import avatar from "../assets/images/Pandora/avatar_3.svg";
 
 function Homepage() {
   const [dataAPI, setDataAPI] = useState([]);
@@ -16,21 +17,23 @@ function Homepage() {
       const API = [
         {
           transform: "perspective(90px) rotateY(5deg)",
-          image: dumbledore,
+          image: galaxie,
+          path: "star-wars",
           zIndex: "10",
+          id: 1,
           univers: "Far far away",
-          imgURLUnivers: "../assets/",
           info: {
             transport: ["Millennium Falcon", "Star Destroyer"],
             guide: "Jar jar binks",
             destination: ["Death star", "Endor", "Naboo", "Tatooine"],
-            imgURLDestination: ["../assets/1", "../assets/2"],
           },
         },
         {
           transform: "perspective(90px) rotateY(3deg)",
-          image: caribbean,
+          image: lordOfTheRing,
+          path: "middle-earth",
           zIndex: "20",
+          id: 2,
           univers: "Middle Earth",
           info: {
             transport: ["Gwaihir", "Horse"],
@@ -40,8 +43,10 @@ function Homepage() {
         },
         {
           transform: "perspective(90px) rotateY(0deg)",
-          image: lordOfTheRing,
+          image: avatar,
+          path: "pandora",
           zIndex: "100",
+          id: 3,
           univers: "Pandora",
           info: {
             transport: ["Ikran", "C-21 Dragon Assault Ship"],
@@ -56,8 +61,10 @@ function Homepage() {
         },
         {
           transform: "perspective(90px) rotateY(358deg)",
-          image: galaxie,
+          image: caribbean,
+          path: "caribbean-cruise",
           zIndex: "20",
+          id: 4,
           univers: " Caribbean cruise",
           info: {
             transport: ["Black Pearl", "Flying Dutchman"],
@@ -72,8 +79,10 @@ function Homepage() {
         },
         {
           transform: "perspective(90px) rotateY(356deg)",
-          image: avatar,
+          image: dumbledore,
+          path: "wizard",
           zIndex: "10",
+          id: 5,
           univers: "Wizard's",
           info: {
             transport: ["Nimbus 2000", "Floo powder"],
@@ -96,6 +105,7 @@ function Homepage() {
     localStorage.setItem("dataWorld", JSON.stringify([item]));
   };
 
+
   return (
     <div className="Homepage">
       {dataAPI.map((itemCard, index) => (
@@ -109,10 +119,19 @@ function Homepage() {
             handleClick(itemCard);
           }}
         />
+        <Link to={`${itemCard.path}`} key={index} >
+          <CardSocle
+            transform={itemCard.transform}
+            image={itemCard.image}
+            zIndex={itemCard.zIndex}
+          />
+        </Link>
       ))}
-
       {/* {dataAPI.map((data) => (
-        <li key={data.info.guide}>{data.info.guide}</li>
+        <div key={data.info.guide}>
+          <li >{data.id}</li>
+          <li >{data.info.guide}</li>
+        </div>
       ))} */}
     </div>
   );
