@@ -2,6 +2,10 @@ import React from "react";
 import { useState, useEffect } from "react";
 import TextDecrivePlanet from "../components/TextDecrivePlanet";
 import Card from "../components/Card";
+import ReservationNavbar from "../components/ReservationNavbar";
+import nimbus from "../assets/images/Wizard/nimbus.svg";
+import cheminette from "../assets/images/Wizard/cheminette.svg";
+import faucon from "../assets/images/StarWars/faucon-millenium.svg";
 
 function GetPageFivePlanet() {
   const [dataWorld, setDataWorld] = useState([]);
@@ -12,9 +16,12 @@ function GetPageFivePlanet() {
     }
   }, []);
 
-
   return (
     <div className="GetPageFivePlanet">
+      <div className="reservation-navbar">
+        <ReservationNavbar />
+      </div>
+
       <TextDecrivePlanet />
       <Card cardFront={dataWorld.transport4} cardBack={dataWorld.cardImage1} />
       <Card cardFront={dataWorld.transport5} cardBack={dataWorld.cardImage2} />
