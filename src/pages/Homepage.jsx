@@ -15,6 +15,9 @@ function Homepage() {
   return (
     <div className="Homepage">
       Coucou tout le monde ! Avec des bisous bien sûr !
+      {dataAPI.map((data) => (
+        <li>{data.name}</li>
+      ))}
     </div>
   );
 }
