@@ -1,0 +1,58 @@
+@use "../variables" as *;
+
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 2px $app-corporate-color2;
+  padding: 0 0.5rem;
+  height: 75px;
+
+  .logo-website {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-items: baseline;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    margin-left: 1rem;
+    list-style-type: none;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: $tablet-size-portrait) {
+  .nav-container {
+    height: 120px;
+
+    ul {
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: $phone-size-big) {
+  .logo-website {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: $phone-size-small) {
+  .nav-container {
+    justify-content: center;
+  }
+}
