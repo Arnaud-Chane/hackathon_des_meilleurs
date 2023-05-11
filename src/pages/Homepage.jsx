@@ -18,16 +18,16 @@ function Homepage() {
       let data = await getAPIData();
       const API = [
         {
+          id: 1,
           univers: "Far far away",
-          imgURLUnivers: "../assets/",
           info: {
             transport: ["Millennium Falcon", "Star Destroyer"],
             guide: "Jar jar binks",
             destination: ["Death star", "Endor", "Naboo", "Tatooine"],
-            imgURLDestination: ["../assets/1", "../assets/2" ]
           },
         },
         {
+          id: 2,
           univers: "Middle Earth",
           info: {
             transport: ["Gwaihir", "Horse"],
@@ -36,6 +36,7 @@ function Homepage() {
           },
         },
         {
+          id: 3,
           univers: "Pandora",
           info: {
             transport: ["Ikran", "C-21 Dragon Assault Ship"],
@@ -49,6 +50,7 @@ function Homepage() {
           },
         },
         {
+          id: 4,
           univers: " Caribbean cruise",
           info: {
             transport: ["Black Pearl", "Flying Dutchman"],
@@ -62,6 +64,7 @@ function Homepage() {
           },
         },
         {
+          id: 5,
           univers: "Wizard's",
           info: {
             transport: ["Nimbus 2000", "Floo powder"],
@@ -88,7 +91,10 @@ function Homepage() {
       ))}
 
       {dataAPI.map((data) => (
-        <li key={data.info.guide}>{data.info.guide}</li>
+        <div key={data.info.guide}>
+          <li >{data.id}</li>
+          <li >{data.info.guide}</li>
+        </div>
       ))}
     </div>
   );
