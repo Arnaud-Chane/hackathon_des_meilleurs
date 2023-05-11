@@ -28,7 +28,6 @@ function TextDecrivePlanet() {
 
   return (
     <div className="textDecrivePlanet">
-      <h1 className="textDecrivePlanetTitle">{dataWorld.path}</h1>
       <p className="textDecrivePlanetParagraphe">{description}</p>
     </div>
   );
