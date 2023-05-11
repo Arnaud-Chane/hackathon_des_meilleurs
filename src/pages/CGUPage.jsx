@@ -3,7 +3,7 @@ import React from "react";
 function CGUPage() {
   return (
     <div className="CGU-page">
-      <h1 className="title-header">Conditions Générales d'Utilisation</h1>
+      <h2 className="title-header">Conditions Générales d'Utilisation</h2>
 
       <div className="text-content">
         Bienvenue dans notre application React. Nous sommes ravis de vous
