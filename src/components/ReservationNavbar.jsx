@@ -70,7 +70,9 @@ function ReservationNavbar() {
           type="button"
           onClick={handleOpenModal}
         >
+          <div className="reservation-btn">
           Reservation
+          </div>
         </button>
       </div>
       <div className="planet-page-guide">
