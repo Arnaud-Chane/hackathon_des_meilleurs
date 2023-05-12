@@ -1,7 +1,18 @@
 @use '../mixins/mixins' as *;
 
 .NotFoundPage {
-
+  position: relative;
+  img{
+  height: 100vh;
+  width: 100%;
+  }
+  .home-redirect{
+    position: absolute;
+    top: 50px;
+    right: 20%;
+    color: white;
+    font-size: 60px;
+  }
 }
 
 .title-404 {
