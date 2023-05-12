@@ -41,7 +41,7 @@ import horses from "../assets/images/MiddleEarth/horses.svg";
 import TheMoria from "../assets/images/MiddleEarth/The Moria.svg";
 import Gwaihir from "../assets/images/MiddleEarth/Gwaihir.svg";
 import gollum from "../assets/images/MiddleEarth/gollum.svg";
-import lordoftherings from "../assets/images/MiddleEarth/lord-of-the-rings.svg";
+import lordoftherings from "../assets/images/MiddleEarth/HelmsDeep.svg";
 import maisonhobbit from "../assets/images/MiddleEarth/maison_hobbit.svg";
 import Rivendell from "../assets/images/MiddleEarth/Rivendell.svg";
 import galaxie from "../assets/images/StarWars/galaxie.svg";
@@ -54,7 +54,7 @@ import GAL_6 from "../assets/images/StarWars/GAL_6.svg";
 import fauconmillenium from "../assets/images/StarWars/faucon-millenium.svg";
 import destroyer from "../assets/images/StarWars/destroyer.svg";
 import etoiledelamort from "../assets/images/StarWars/étoile_de_la_mort.svg";
-import galaxies from "../assets/images/StarWars/galaxie.svg";
+import galaxies from "../assets/images/StarWars/village_ewok.svg";
 import naboo from "../assets/images/StarWars/naboo.svg";
 import Tatooine from "../assets/images/StarWars/tatooine.svg";
 import jarjarbinks from "../assets/images/StarWars/jarjarbinks.svg";
@@ -71,6 +71,7 @@ import montagnes from "../assets/images/Pandora/montagnes_avatar.svg";
 import NEYTIRI from "../assets/images/Pandora/NEYTIRI.svg";
 import capsule from "../assets/images/Pandora/capsule.svg";
 import arbre from "../assets/images/Pandora/arbre.svg";
+import avatar2 from "../assets/images/Pandora/avatar2-pandora-concept-art 1.svg";
 
 function Homepage() {
   const [dataAPI, setDataAPI] = useState([]);
@@ -99,7 +100,7 @@ function Homepage() {
           title5: "Naboo",
           destination5:
             "Marvel at the regal beauty of this planet, with its elegant architecture, vibrant culture, and picturesque landscapes.",
-          title4: "Endor",
+          title4: "Ewok Village",
           destination4:
             "Immerse yourself in the lush forests and encounter the adorable Ewoks, inhabitants of this enchanting moon.",
           title3: "Death Star",
@@ -129,11 +130,11 @@ function Homepage() {
           },
         },
         {
-          transport4: horses,
-          transport5: TheMoria,
-          cardImage7: Gwaihir,
+          transport4: Gwaihir,
+          transport5: horses,
+          cardImage9: TheMoria,
           cardImage8: lordoftherings,
-          cardImage9: maisonhobbit,
+          cardImage7: maisonhobbit,
           cardImage10: Rivendell,
           cardImage1: LORD_1,
           cardImage2: LORD_2,
@@ -178,12 +179,12 @@ function Homepage() {
           },
         },
         {
-          transport4: Dragongunship,
-          transport5: ikran,
-          cardImage7: montagnes,
-          cardImage8: NEYTIRI,
+          transport5: Dragongunship,
+          transport4: ikran,
+          cardImage10: montagnes,
+          cardImage8: avatar2,
           cardImage9: capsule,
-          cardImage10: arbre,
+          cardImage7: arbre,
           cardImage1: AV_1,
           cardImage2: AV_2,
           cardImage3: AV_3,
@@ -194,7 +195,7 @@ function Homepage() {
           title6: "Cove of the Ancestors",
           destination6:
             "Journey to this sacred place, where the spirits of the Na'vi ancestors dwell, offering tranquility and spiritual enlightenment",
-          title5: "Three Brothers Rocks",
+          title5: "Capsule",
           destination5:
             "Discover the mystique and natural beauty of the Three Brothers Rocks, steeped in myth and legend.",
           title4: "RDA Camp",
@@ -234,10 +235,10 @@ function Homepage() {
         {
           transport4: black_pearl,
           transport5: flying_dutchman,
-          cardImage7: Rumisland,
-          cardImage8: tortugaisland,
+          cardImage8: Rumisland,
+          cardImage10: tortugaisland,
           cardImage9: portroyale,
-          cardImage10: IslaDeMuertaPirates,
+          cardImage7: IslaDeMuertaPirates,
           cardImage1: CAR_1,
           cardImage2: CAR_2,
           cardImage3: CAR_3,
@@ -286,12 +287,12 @@ function Homepage() {
           },
         },
         {
-          transport4: cheminette,
-          transport5: nimbus,
-          cardImage7: pre_au_lard,
-          cardImage8: malefoy,
-          cardImage9: weasley,
-          cardImage10: poudlard,
+          transport5: cheminette,
+          transport4: nimbus,
+          cardImage10: pre_au_lard,
+          cardImage9: malefoy,
+          cardImage8: weasley,
+          cardImage7: poudlard,
           cardImage1: HP_1,
           cardImage2: HP_2,
           cardImage3: HP_3,
