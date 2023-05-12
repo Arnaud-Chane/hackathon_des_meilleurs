@@ -1,21 +1,15 @@
 @use "../variables" as *;
 
-.nav-container-footer {
+.footer-container {
+  border-top: solid 2px $app-corporate-color2;
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  justify-content: space-between;
-  border-bottom: solid 2px $app-corporate-color2;
-  height: auto;
-
-  .logo-website {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
+  height: 80px;
 
   nav {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     align-items: baseline;
   }
@@ -25,7 +19,7 @@
   }
 
   li {
-    margin-right: 1rem;
+    margin-right: 2rem;
     list-style-type: none;
     cursor: pointer;
   }
@@ -38,31 +32,10 @@
     }
   }
 
-  img {
-    height: 73px;
-  }
-}
-
-@media screen and (max-width: $tablet-size-portrait) {
-  .nav-container {
-    height: 170px;
-
-    ul {
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-items: center;
+  .footer-right {
+    img {
+      margin-right: 2rem;
+      cursor: pointer;
     }
-  }
-}
-
-@media screen and (max-width: $phone-size-big) {
-  .logo-website {
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: $phone-size-small) {
-  .nav-container {
-    justify-content: center;
   }
 }

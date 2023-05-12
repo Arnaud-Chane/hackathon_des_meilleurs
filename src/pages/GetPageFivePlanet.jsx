@@ -3,9 +3,6 @@ import { useState, useEffect } from "react";
 import TextDecrivePlanet from "../components/TextDecrivePlanet";
 import Card from "../components/Card";
 import ReservationNavbar from "../components/ReservationNavbar";
-import nimbus from "../assets/images/Wizard/nimbus.svg";
-import cheminette from "../assets/images/Wizard/cheminette.svg";
-import faucon from "../assets/images/StarWars/faucon-millenium.svg";
 
 function GetPageFivePlanet() {
   const [dataWorld, setDataWorld] = useState([]);
@@ -16,21 +13,72 @@ function GetPageFivePlanet() {
     }
   }, []);
 
+  console.log(dataWorld);
+
   return (
     <div className="GetPageFivePlanet">
       <div className="reservation-navbar">
         <ReservationNavbar />
       </div>
 
-      <div className="content-page">
-        <Card cardFront={nimbus} cardBack={cheminette} />
-        <Card cardFront={faucon} cardBack={cheminette} />
-        <Card cardFront={faucon} cardBack={cheminette} />
-        <Card cardFront={faucon} cardBack={cheminette} />
-        <Card cardFront={faucon} cardBack={cheminette} />
-        <Card cardFront={faucon} cardBack={cheminette} />
-      </div>
       <TextDecrivePlanet />
+      <Card
+        cardFront={dataWorld.transport4}
+        cardBack={dataWorld.cardImage1}
+        title={dataWorld.title1}
+      />
+      <Card
+        cardFront={dataWorld.transport5}
+        cardBack={dataWorld.cardImage2}
+        title={dataWorld.title2}
+      />
+      <Card
+        cardFront={dataWorld.cardImage7}
+        cardBack={dataWorld.cardImage3}
+        title={dataWorld.title3}
+      />
+      <Card
+        cardFront={dataWorld.cardImage8}
+        cardBack={dataWorld.cardImage4}
+        title={dataWorld.title4}
+      />
+      <Card
+        cardFront={dataWorld.cardImage9}
+        cardBack={dataWorld.cardImage5}
+        title={dataWorld.title5}
+      />
+      <Card
+        cardFront={dataWorld.cardImage10}
+        cardBack={dataWorld.cardImage6}
+        title={dataWorld.title6}
+      />
+
+      <div className="description-holiday">
+        <div className="title-text">
+          <h2>Transport 1: {dataWorld.title1}</h2>
+          <p>{dataWorld.transport1}</p>
+        </div>
+        <div className="title-text">
+          <h2>Transport 2: {dataWorld.title2}</h2>
+          <p> {dataWorld.transport2}</p>
+        </div>
+        <div className="title-text">
+          <h2>Destination 1: {dataWorld.title3}</h2>
+          <p> {dataWorld.destination3}</p>
+        </div>
+        <div className="title-text">
+          <h2>Destination 2: {dataWorld.title4}</h2>
+          <p> {dataWorld.destination4}</p>
+        </div>
+        <div className="title-text">
+          <h2>Destination 3: {dataWorld.title5}</h2>
+          <p>{dataWorld.destination5}</p>
+        </div>
+        <div className="title-text">
+          <h2>Destination 4: {dataWorld.title6}</h2>
+          <p>{dataWorld.destination6}</p>
+        </div>
+      </div>
     </div>
   );
 }

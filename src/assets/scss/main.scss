@@ -13,6 +13,10 @@
 @import "../scss/components/homepage.scss";
 @import "../scss/components/cardSocle.scss";
 @import "../scss/components/getPageFivePlanet.scss";
+@import "../scss/components/AboutUs.scss";
+@import "../scss/components/Contact.scss";
+
+
 
 //components
 @import "../scss/components/textDecrivePlanet.scss";
@@ -21,7 +25,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: $app-primary-font;
 }
 
 body {

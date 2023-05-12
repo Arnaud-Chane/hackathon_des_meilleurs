@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Italianno');
+
 .GetPageFivePlanet {
   /*  .GetPageFivePlanetTop {
     border: 2px solid black;
@@ -7,13 +9,39 @@
     grid-template-columns: 30px 1fr 1fr 1fr 1fr 30px;
     grid-template-rows: 20px 40vh 20px;
   } */
-  .content-page {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+
+  .reservation-navbar {
+    width: 100%;
+    font-family: 'Italianno', cursive;
+    font-size: 80px;
+  }
+
+  .description-holiday {
+    width: 70%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
-    justify-content: space-around;
-    height: 50vh;
-    padding: 2rem;
+
+    .title-text {
+      width: 50%;
+      padding: 2rem;
+    }
+
+    p {
+      padding: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet-size-paysage) {
+  .GetPageFivePlanet {
+    gap: 0;
   }
 }

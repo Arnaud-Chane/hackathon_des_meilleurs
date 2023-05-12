@@ -6,7 +6,7 @@ import snapchat from "../assets/images/icons/footer-snapchat.svg";
 
 export default function Footer() {
   return (
-    <div className=".nav-container">
+    <div className="footer-container">
       <nav className="footer-left">
         <ul>
           <Link to="/about-us">

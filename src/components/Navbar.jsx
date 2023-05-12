@@ -2,6 +2,11 @@ import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.svg";
 
 export default function NavBar() {
+
+  const handleClick = (item) => {
+    localStorage.setItem("dataWorld", JSON.stringify([item]));
+  };
+  
   return (
     <div className="nav-container">
       <div className="logo-website">
@@ -24,7 +29,7 @@ export default function NavBar() {
             <li>Caribbean cruise</li>
           </Link>
 
-          <Link to="/wisard">
+          <Link to="/wizard">
             <li>Wizard’s</li>
           </Link>
 
