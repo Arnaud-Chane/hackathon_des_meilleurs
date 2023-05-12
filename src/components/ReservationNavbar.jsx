@@ -2,8 +2,43 @@ import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+<<<<<<< HEAD
+=======
 
 function ReservationNavbar() {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [selectedDate, setSelectedDate] = useState(new Date());
+  const [isBooked, setIsBooked] = useState(false);
+
+  const handleOpenModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setModalIsOpen(false);
+    setIsBooked(false);
+  };
+
+  const handleDateChange = (date) => {
+    setSelectedDate(date);
+  };
+>>>>>>> 99a692be21c0432a7bc0c6756715c7bbb0220305
+
+  const handleBooking = () => {
+    setIsBooked(true);
+    setTimeout(() => {
+      handleCloseModal();
+    }, 3000);
+  };
+
+  useEffect(() => {
+    if (isBooked) {
+      setTimeout(() => {
+        handleCloseModal();
+      }, 3000);
+    }
+  }, [isBooked]);
+
   const [dataWorld, setDataWorld] = useState([]);
   const [description, setDescription] = useState("");
 
@@ -28,6 +63,7 @@ function ReservationNavbar() {
       ecriture(dataWorld.description, 0);
     }, 1000);
   }, [dataWorld.description]);
+<<<<<<< HEAD
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedDate, setSelectedDate] = useState(new Date());
@@ -43,6 +79,8 @@ function ReservationNavbar() {
   const handleDateChange = (date) => {
     setSelectedDate(date);
   };
+=======
+>>>>>>> 99a692be21c0432a7bc0c6756715c7bbb0220305
 
   return (
     <div className="ReservationNavbar">
@@ -101,13 +139,16 @@ function ReservationNavbar() {
           </button>
           <h2>Chose your date</h2>
           <DatePicker selected={selectedDate} onChange={handleDateChange} />
-          <button className="btn-submit" onClick={handleCloseModal}>
-            Booked
-          </button>
+          {isBooked ? (
+            <p>Holidays booked!</p>
+          ) : (
+            <button className="btn-submit" onClick={handleBooking}>
+              Booked
+            </button>
+          )}
         </div>
       </Modal>
     </div>
   );
 }
-
 export default ReservationNavbar;

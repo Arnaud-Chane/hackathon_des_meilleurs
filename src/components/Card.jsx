@@ -12,12 +12,7 @@ export default function Card({ cardFront, cardBack, title }) {
       <div className={flipped ? "flipped" : ""} onClick={handleClick}>
         <img className="card-front" src={cardFront} alt="card front" />
         <div className="img-with-hover-text">
-          <img
-            className="card-back"
-            title={title}
-            src={cardBack}
-            alt="card back"
-          />
+          <img className="card-back" src={cardBack} alt="card back" />
           <div className="hover-text">{title}</div>
         </div>
       </div>

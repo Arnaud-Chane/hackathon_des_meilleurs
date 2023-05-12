@@ -4,6 +4,7 @@
 .card {
   word-wrap: break-word;
   margin: 1rem;
+  cursor: pointer;
 
   .card-front {
     position: absolute;
@@ -51,6 +52,7 @@
 
   .img-with-hover-text:hover .hover-text {
     display: block;
+    border-radius: 20px;
   }
 
   .hover-text {
