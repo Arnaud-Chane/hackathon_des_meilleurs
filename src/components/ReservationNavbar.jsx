@@ -37,7 +37,11 @@ function ReservationNavbar() {
       </div>
       <div className="planet-page-guide">
         <div className="planet-page-guide-name">{dataWorld.guide_name}</div>
-        <img src={dataWorld.guideImg} alt={dataWorld.guide_name} className="planet-page-guide-img" />
+        <img
+          src={dataWorld.guideImg}
+          alt={dataWorld.guide_name}
+          className="planet-page-guide-img"
+        />
       </div>
     </div>
   );

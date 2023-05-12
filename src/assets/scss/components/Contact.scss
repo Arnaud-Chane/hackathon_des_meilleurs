@@ -1,4 +1,76 @@
-.image_contact {
-width: 100%;
-height: 80vh;
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  padding: 2rem;
+
+  h2 {
+    font-family: $app-secondary-font;
+    font-size: 100px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+
+    .input-contact {
+      display: block;
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 0.25rem;
+      border: solid 2px $app-corporate-color2;
+      background-color: $app-supporting-color2;
+      color: $app-corporate-color2;
+    }
+  }
+
+  .primary-btn {
+    cursor: pointer;
+    border: solid 1px $app-corporate-color2;
+    color: $app-corporate-color2;
+    background-color: $app-supporting-color2;
+    background-image: linear-gradient(
+      to right,
+      $app-corporate-color1,
+      $app-corporate-color2,
+      10%,
+      $app-supporting-color2
+    );
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    font-family: $app-primary-font;
+    animation: slideBack 2s ease-out forwards;
+  }
+
+  .primary-btn:hover {
+    background-image: linear-gradient(
+      to left,
+      $app-corporate-color1,
+      $app-corporate-color2,
+      10%,
+      $app-supporting-color2
+    );
+    animation: slide 2s ease-out forwards;
+    transform: translateX(2rem);
+    transition: all 0.5s ease-in-out;
+  }
+
+  @keyframes slide {
+    to {
+      background-position: 2rem;
+    }
+  }
+
+  @keyframes slideBack {
+    to {
+      background-position: -2rem;
+    }
+  }
 }
