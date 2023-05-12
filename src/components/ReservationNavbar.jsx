@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -7,6 +7,7 @@ import dobby from "../assets/images/Wizard/dobby.svg";
 function ReservationNavbar() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedDate, setSelectedDate] = useState(new Date());
+  const [isBooked, setIsBooked] = useState(false);
 
   const handleOpenModal = () => {
     setModalIsOpen(true);
@@ -14,11 +15,27 @@ function ReservationNavbar() {
 
   const handleCloseModal = () => {
     setModalIsOpen(false);
+    setIsBooked(false);
   };
 
   const handleDateChange = (date) => {
     setSelectedDate(date);
   };
+
+  const handleBooking = () => {
+    setIsBooked(true);
+    setTimeout(() => {
+      handleCloseModal();
+    }, 3000);
+  };
+
+  useEffect(() => {
+    if (isBooked) {
+      setTimeout(() => {
+        handleCloseModal();
+      }, 3000);
+    }
+  }, [isBooked]);
 
   return (
     <div className="ReservationNavbar">
@@ -73,9 +90,13 @@ function ReservationNavbar() {
           </button>
           <h2>Chose your date</h2>
           <DatePicker selected={selectedDate} onChange={handleDateChange} />
-          <button className="btn-submit" onClick={handleCloseModal}>
-            Booked
-          </button>
+          {isBooked ? (
+            <p>Holidays booked!</p>
+          ) : (
+            <button className="btn-submit" onClick={handleBooking}>
+              Booked
+            </button>
+          )}
         </div>
       </Modal>
     </div>
