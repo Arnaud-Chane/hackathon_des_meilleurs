@@ -43,6 +43,27 @@
     transform: rotateY(90deg);
     transition-delay: 0s;
   }
+
+  .img-with-hover-text {
+    position: relative;
+    display: inline-block;
+  }
+
+  .img-with-hover-text:hover .hover-text {
+    display: block;
+  }
+
+  .hover-text {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+  }
 }
 
 @media screen and (max-width: $tablet-size-paysage) {

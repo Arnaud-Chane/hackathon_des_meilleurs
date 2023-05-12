@@ -55,27 +55,27 @@ function GetPageFivePlanet() {
 
       <div className="description-holiday">
         <div className="title-text">
-          <h2>Transport 1: </h2>
+          <h2>Transport 1: {dataWorld.title1}</h2>
           <p>{dataWorld.transport1}</p>
         </div>
         <div className="title-text">
-          <h2>Transport 2:</h2>
+          <h2>Transport 2: {dataWorld.title2}</h2>
           <p> {dataWorld.transport2}</p>
         </div>
         <div className="title-text">
-          <h2>Destination 1:</h2>
+          <h2>Destination 1: {dataWorld.title3}</h2>
           <p> {dataWorld.destination3}</p>
         </div>
         <div className="title-text">
-          <h2>Destination 2:</h2>
+          <h2>Destination 2: {dataWorld.title4}</h2>
           <p> {dataWorld.destination4}</p>
         </div>
         <div className="title-text">
-          <h2>Destination 3: </h2>
+          <h2>Destination 3: {dataWorld.title5}</h2>
           <p>{dataWorld.destination5}</p>
         </div>
         <div className="title-text">
-          <h2>Destination 4: </h2>
+          <h2>Destination 4: {dataWorld.title6}</h2>
           <p>{dataWorld.destination6}</p>
         </div>
       </div>
