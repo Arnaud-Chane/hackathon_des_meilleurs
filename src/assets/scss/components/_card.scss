@@ -28,14 +28,41 @@
     width: 260px;
     background-color: $app-corporate-color1;
     border: none;
-    box-shadow: 0px 2px 14px #4f4b4b;
     border-radius: 40px;
     cursor: pointer;
+    position: relative;
+  }
+
+  .card-back:hover {
+    box-shadow: 0px 2px 14px #7e7c7c;
+    display: block;
+    transition-delay: 0s;
   }
 
   .flipped .card-back {
     transform: rotateY(90deg);
     transition-delay: 0s;
+  }
+
+  .img-with-hover-text {
+    position: relative;
+    display: inline-block;
+  }
+
+  .img-with-hover-text:hover .hover-text {
+    display: block;
+  }
+
+  .hover-text {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
   }
 }
 

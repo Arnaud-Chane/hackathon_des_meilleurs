@@ -9,12 +9,17 @@
     height: 60px;
     width: 300px;
     border-radius: 10px;
-    border: #D9D9D9 2px solid;
-    background-color: #2D394B;
+    border: #d9d9d9 2px solid;
+    background-color: #2d394b;
     color: white;
+    cursor: pointer;
   }
 
-  .planet-page-button-reservation{
+  button:hover {
+    background-color: #435571;
+  }
+
+  .planet-page-button-reservation {
     display: flex;
     align-items: center;
     margin-left: 106px;
@@ -26,7 +31,6 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  
 
   img {
     height: 60px;
