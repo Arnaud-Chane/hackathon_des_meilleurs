@@ -1,5 +1,6 @@
 // import { Redirect } from "react-router-dom";
 // import { useState, useEffect } from "react";
+import error from "../assets/images/Group3.svg";
 
 export default function NotFoundPage() {
   // const [redirected, setRedirected] = useState(false);
@@ -17,8 +18,7 @@ export default function NotFoundPage() {
 
   return (
     <div className="NotFoundPage">
-      <h1 className="title-404">404 Error: Page Not Found</h1>
-      <p className="content-404">{"Sorry, we couldn't find the page you were looking for."}</p>
+      <img src={error}  alt="404" />
     </div>
   );
 }

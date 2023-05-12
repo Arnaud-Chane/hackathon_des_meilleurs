@@ -1,7 +1,10 @@
 @use '../mixins/mixins' as *;
 
 .NotFoundPage {
-
+  img{
+  height: 100vh;
+  width: 100%;
+  }
 }
 
 .title-404 {

@@ -14,6 +14,10 @@ import Contact from "./pages/Contact";
 
 const router = createBrowserRouter([
   {
+    path: "*",
+    element: <NotFoundPage />,
+  },
+  {
     path: "/",
     element: <Root />,
     children: [
@@ -57,10 +61,7 @@ const router = createBrowserRouter([
         path: "/about-us",
         element: <AboutUs />,
       },
-      {
-        path: "*",
-        element: <NotFoundPage />,
-      },
+
     ],
   },
 ]);
