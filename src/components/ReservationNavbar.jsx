@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-<<<<<<< HEAD
-=======
 
 function ReservationNavbar() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -22,7 +20,6 @@ function ReservationNavbar() {
   const handleDateChange = (date) => {
     setSelectedDate(date);
   };
->>>>>>> 99a692be21c0432a7bc0c6756715c7bbb0220305
 
   const handleBooking = () => {
     setIsBooked(true);
@@ -63,24 +60,6 @@ function ReservationNavbar() {
       ecriture(dataWorld.description, 0);
     }, 1000);
   }, [dataWorld.description]);
-<<<<<<< HEAD
-
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [selectedDate, setSelectedDate] = useState(new Date());
-
-  const handleOpenModal = () => {
-    setModalIsOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setModalIsOpen(false);
-  };
-
-  const handleDateChange = (date) => {
-    setSelectedDate(date);
-  };
-=======
->>>>>>> 99a692be21c0432a7bc0c6756715c7bbb0220305
 
   return (
     <div className="ReservationNavbar">
