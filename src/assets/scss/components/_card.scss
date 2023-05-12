@@ -28,9 +28,15 @@
     width: 260px;
     background-color: $app-corporate-color1;
     border: none;
-    box-shadow: 0px 2px 14px #4f4b4b;
     border-radius: 40px;
     cursor: pointer;
+    position: relative;
+  }
+
+  .card-back:hover {
+    box-shadow: 0px 2px 14px #7e7c7c;
+    display: block;
+    transition-delay: 0s;
   }
 
   .flipped .card-back {

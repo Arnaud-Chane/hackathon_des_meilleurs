@@ -12,6 +12,11 @@
     border: #d9d9d9 2px solid;
     background-color: #2d394b;
     color: white;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #435571;
   }
 
   .planet-page-button-reservation {
